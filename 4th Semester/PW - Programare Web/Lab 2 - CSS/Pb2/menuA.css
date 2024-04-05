@@ -1,0 +1,32 @@
+
+.menu {
+  width: 100%;
+  height: 20px;
+  background-color: yellow;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin: 0; /* Eliminăm marginile implicite */
+  padding: 0; /* Eliminăm padding-ul implicite */
+}
+
+.menu li {
+  color : black;
+  flex: 1;
+  text-align: left;
+  border-right: 1px solid black;
+  padding: 0 20px;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+  height: 20px;
+}
+
+.menu li:last-child {
+  border-right: none; /* Eliminăm bordura de la ultimul element */
+}

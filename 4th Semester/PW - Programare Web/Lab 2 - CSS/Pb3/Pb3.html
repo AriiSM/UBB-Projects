@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Problema3_CSS</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Ca sa fie pe intreaga fereastra  */
+      width: 100vw;
+      display: flex;
+      flex-direction: column
+    }
+
+    .header{
+      background-color: red;
+      height: 100px;
+      text-align: center;
+    }
+
+   .menu {
+      height: 25px;
+      background-color: yellow;
+    }
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin: 0; /* Eliminăm marginile implicite */
+  padding: 0; /* Eliminăm padding-ul implicite */
+}
+
+.menu li {
+  color : black;
+  flex: 1;
+  text-align: left;
+  border-right: 1px solid black;
+  padding: 0 20px;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+  height: 25px;
+}
+
+.menu li:last-child {
+  border-right: none; /* Eliminăm bordura de la ultimul element */
+}
+
+.content {
+  background-color: green;
+  flex: 1; /* Ocupă tot spațiul disponibil în direcția verticală */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.footer {
+  background-color: pink;
+  color: black;
+  height: 60px;
+  padding: 10px;
+  text-align: left;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+</div>
+
+
+  <div class="menu">
+    <ul>
+      <li>Horizontal menu</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Main View</h1>
+    <h1>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</h1>
+   
+  </div>
+
+
+<div class="footer">
+  <p>Footer Text</p>
+</div>
+
+</body>
+</html>

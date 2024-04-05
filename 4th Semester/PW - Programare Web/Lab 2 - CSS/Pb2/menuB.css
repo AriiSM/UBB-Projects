@@ -1,0 +1,22 @@
+   .menu {
+      width: 20%;
+      background-color: yellow;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .menu li {
+      color: black;
+      text-align: left;
+      border-bottom: 3px solid black;
+      padding: 5px 20px;
+    }
+    
+    .menu li:hover {
+      background-color: #0099cc;
+    }

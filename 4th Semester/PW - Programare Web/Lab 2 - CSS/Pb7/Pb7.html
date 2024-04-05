@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Problema7_CSS</title>
+
+    <style>
+        .dialog {    
+            padding: 100px;
+            margin: 30px;
+        }
+
+        .dialog li {
+            margin-bottom: 20px; 
+            position: relative;
+            max-width: 10%; 
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .dialog li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-style: solid;
+            border-width: 15px 15px 0 0;
+        }
+
+        .alice::before {
+            border-color: transparent;
+        }
+
+        .bob::before {
+            border-color: transparent;
+        }
+
+
+/*Sprite*/
+        .icon {
+            width: 180px;
+            height: 140px;
+            background-image: url('copii.jpg');
+        }
+        /* Stiluri pentru fiecare persoană */
+        .alice .icon {
+            background-position: -25px 0; /* Coordonate pentru iconul Alice în sprite */
+        }
+
+        .bob .icon {
+            background-position: 160px 0; /* Coordonate pentru iconul Bob în sprite */
+        }
+
+
+/*Partea de text*/
+        .text {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 20px);
+            transform: translateY(-50%);
+            padding: 10px;
+            border-radius: 25px;
+            min-width: 300px;
+        }
+
+        .alice .text {
+            background-color: pink; 
+        }
+
+        .bob .text {
+            background-color: cyan; 
+        }
+
+
+/*Sageata de la dialog*/
+        .arrow {
+            display: none;
+            position: absolute; 
+            top: 45%; 
+            left: -20px; 
+            transform: translateY(-50%) rotate(290deg); 
+            width: 30px; 
+            height: 30px; 
+            background-color: inherit; 
+            border-radius: 50%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+
+        .alice .arrow {
+            background-color: pink; 
+            left: auto;
+            right: -30px;
+        }
+
+        .bob .arrow {
+            background-color: cyan; 
+            left: auto; 
+            right: -30px; 
+        }
+
+/*Hover*/
+        .dialog li:hover .text, .dialog li:hover .arrow {
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+    <ul class="dialog">
+        <li class="alice">
+            <div class="icon"></div> 
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+            <div class="arrow"></div>
+        </li>
+        <li class="bob">
+            <div class="icon"></div>
+            <div class="text">Sed ut perspiciatis unde omnis iste nat us error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</div>
+            <div class="arrow"></div>
+        </li>
+        <li class="alice">
+            <div class="icon"></div>
+            <div class="text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse</div>
+            <div class="arrow"></div>
+        </li>
+        <li class="bob">
+            <div class="icon"></div> 
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</div>
+            <div class="arrow"></div>
+        </li>
+    </ul>
+</body>
+</html>               
