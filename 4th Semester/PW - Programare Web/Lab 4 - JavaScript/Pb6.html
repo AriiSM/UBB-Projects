@@ -1,0 +1,121 @@
+<!-- O pagina HTML va contine un tabel cu n linii si n coloane. Celulele tabelului contin numere de la 1 la n2 intr-o ordine aleatoare. Una dintre celule este libera. Folosind JavaScript sa se creeze in cadrul paginii un joc de tip puzzle care la apasarea tastelor sageti va interschimba celula libera cu celula adiacenta (corespunzatoare tastei sus, jos, stanga, dreapta apasata). Nu se vor folosi biblioteci de functii, jQuery, pluginuri, etc.Puzzle-ul initial: -->
+<!-- Cerinta facultativa pentru cei ce se “plictisesc” :): Dupa implementarea initiala, se va crea o a doua varianta a jocului, unde, in loc de numere, celulele tabelului vor contine sprite-uri CSS obtinute din cadrul unei aceleasi imagini patrate. Numarul n se va da la inceputul jocului, la fel si URL-ul imaginii ce se va folosi in sprite-urile CSS ca si fundal pe celulele tabelului-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problema 6</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background: lightgreen;
+            border: white 1px solid;
+            width: 640px;
+            height: 640px;
+            margin: auto;
+        }
+        
+        table,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        td {
+            width: 160px;
+            height: 160px;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body onload="generateTable()">
+    <table id="myTable" style="width: 640px; margin-top: 1em;">
+    </table>
+</body>
+<script>
+    var empty, dim = 4;
+
+    function generateTable() {
+        var elem;
+        var numbers = generateNumbers(dim * dim);
+        var output = "";
+        for (let i = 0; i < dim; i++) {
+            output += '<tr>'
+            for (let j = 0; j < dim; j++) {
+                output += `<td id='${i*dim+j}' >`;
+                elem = numbers.pop();
+                if (elem != dim * dim)
+                    output += elem;
+                else {
+                    empty = i * dim + j;
+                }
+                output += '</td>';
+            }
+            output += '</tr>'
+        }
+        document.getElementById("myTable").innerHTML = output;
+    }
+
+    function swap(id1, id2) {
+        let aux = document.getElementById(id1).innerHTML;
+        document.getElementById(id1).innerHTML = document.getElementById(id2).innerHTML;
+        document.getElementById(id2).innerHTML = aux;
+        empty = id2;
+    }
+
+    document.onkeydown = checkKey;
+
+    function checkKey(e) {
+
+        e = e || window.event;
+
+        if (e.keyCode == '38') {
+            if (empty - dim >= 0)
+                swap(empty, empty - dim);
+            else
+                alert('I cant move up');
+        } else if (e.keyCode == '40') {
+            if (empty + dim <= dim * dim)
+                swap(empty, empty + dim);
+            else
+                alert('I cant move down');
+        } else if (e.keyCode == '37') {
+            if (empty % dim != 0)
+                swap(empty, empty - 1);
+            else
+                alert('I cant move left');
+        } else if (e.keyCode == '39') {
+            if (empty % dim != dim - 1)
+                swap(empty, empty + 1);
+            else
+                alert('I cant move right');
+        }
+
+    }
+
+    function move(x) {
+
+    }
+
+    function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    function generateNumbers(n) {
+        array = [];
+        for (let i = 1; i <= n; i++) {
+            array.push(i);
+        }
+        shuffle(array);
+        return array;
+    }
+</script>
+
+</html>

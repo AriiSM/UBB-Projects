@@ -1,0 +1,115 @@
+<!-- Un formular web va permite unui utilizator sa isi introduca numele, data nasterii, varsta si adresa de e-mail. La apasarea unui buton “Trimite” se vor valida toate aceste campuri daca sunt completate si daca sunt completate corect. Daca da, se va afisa un mesaj “Datele sunt completate corect”, altfel, se va afisa un mesaj de genul “Campurile nume si varsta nu sunt completate corect”, aceste campuri fiind “incercuite” intr-o bordura rosie. Toate aceste validari vor fi implementate pe client in JavaScript -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problema 2</title>
+</head>
+
+<body>
+
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname"><br><br>
+        Data nasterii: <input type="date" name="fdata" onchange="calculateAge(this.value)"><br><br>
+        Varsta: <input type="text" name="fvarsta" id="varsta" readonly><br><br>
+        Email: <input type="text" name="femail"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function checkNumber(number) {
+        	/* din N (intreg pozitiv)  */
+            return /^\d+$/.test(number);
+        }
+
+        function checkData(data) {
+            var elem = data.split('-');
+            return elem[0] > 1975 && elem[0] < 2024;
+        }
+
+        function checkAge(age) {
+            return age <= 48 && age >= 7;
+        }
+
+        function checkOnlyLetters(word) {
+            return /^[a-zA-Z]+$/.test(word);
+        }
+
+        function checkEmail(email) {
+            return /\S+@\S+\.\S+/.test(email);
+        }
+
+        function checkEmpty(field) {
+            return field === "";
+        }
+
+        function calculateAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            /* aici se atribuie campului varsta cu ajutorul id-ului */
+            document.getElementById("varsta").value = age;
+        }
+
+        function validateForm() {
+            let fnume = document.forms["myForm"]["fname"].value;
+            let fdata = document.forms["myForm"]["fdata"].value;
+            let fvarsta = document.forms["myForm"]["fvarsta"].value;
+            let femail = document.forms["myForm"]["femail"].value;
+            var error = "";
+
+            if (checkEmpty(fnume)) {
+                error += "Campul nume nu este completat\n";
+                document.forms["myForm"]["fname"].style.border = "thick solid red";
+            } else if (!checkOnlyLetters(fnume)) {
+                error += "Campul nume nu este valid. Completati doar cu litere.\n";
+                document.forms["myForm"]["fname"].style.border = "thick solid red";
+            } else {
+                document.forms["myForm"]["fname"].style.border = "thick solid green";
+            }
+
+            if (checkEmpty(fdata)) {
+                error += "Campul data nu este completat\n";
+                document.forms["myForm"]["fdata"].style.border = "thick solid red";
+            } else if (!checkData(fdata)) {
+                error += "Campul data nu este valid. Dati un an cuprins intre 1990 si 2010.\n";
+                document.forms["myForm"]["fdata"].style.border = "thick solid red";
+            } else {
+                document.forms["myForm"]["fdata"].style.border = "thick solid green";
+            }
+
+            if (checkEmpty(fvarsta)) {
+                error += "Campul varsta nu este completat\n";
+                document.forms["myForm"]["fvarsta"].style.border = "thick solid red";
+            } else {
+                document.forms["myForm"]["fvarsta"].style.border = "thick solid green";
+            }
+
+            if (checkEmpty(femail)) {
+                error += "Campul email nu este completat\n";
+                document.forms["myForm"]["femail"].style.border = "thick solid red";
+            } else if (!checkEmail(femail)) {
+                error += "Campul email nu este valid. Respectati formatul username@domain.xx\n";
+                document.forms["myForm"]["femail"].style.border = "thick solid red";
+            } else {
+                document.forms["myForm"]["femail"].style.border = "thick solid green";
+            }
+
+            if (error.length > 0) {
+                alert(error);
+                return false;
+            } else {
+                alert('Datele sunt completate corect');
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
