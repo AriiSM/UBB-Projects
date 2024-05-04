@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.monitorizareangajati.controler.SefControler">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Angajati">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView prefHeight="219.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);">
+                                            <columns>
+                                                <TableColumn prefWidth="75.0" text="Nume" />
+                                                <TableColumn prefWidth="75.0" text="Status" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                        <TextArea layoutX="14.0" layoutY="231.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="125.0" prefWidth="200.0" promptText="Descriere sarcina" />
+                                        <Button layoutX="248.0" layoutY="281.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531); -fx-text-fill: #f4f4f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Trimite sarcina" textFill="WHITE">
+                                            <font>
+                                                <Font size="13.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Sarcini">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView prefHeight="195.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);">
+                                            <columns>
+                                                <TableColumn prefWidth="75.0" text="Angajat" />
+                                                <TableColumn prefWidth="75.0" text="Status" />
+                                                <TableColumn prefWidth="75.0" text="Sarcina" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                        <Button layoutX="496.0" layoutY="204.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531); -fx-text-fill: #f4f4f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Sterge Sarcina" />
+                                        <Button layoutX="262.0" layoutY="257.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="114.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531); -fx-text-fill: #f4f4f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Modifica Sarcina" />
+                                        <TextArea layoutX="14.0" layoutY="257.0" prefHeight="105.0" prefWidth="200.0" promptText="Descriere Sarcina" />
+                                        <TextField alignment="CENTER" layoutX="14.0" layoutY="217.0" prefHeight="26.0" prefWidth="200.0" promptText="Angajat nou" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

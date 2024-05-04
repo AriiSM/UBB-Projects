@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.monitorizareangajati.controler.AngajatControler">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Prezenta">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TextField alignment="CENTER" layoutX="220.0" layoutY="114.0" prefHeight="43.0" prefWidth="159.0" promptText="Ora sosire" />
+                                        <Button layoutX="261.0" layoutY="199.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: linear-gradient(to bottom, #1B4D3E, #2C3531); -fx-background-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Prezent" textFill="#f4f4f4" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Productivitate">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView layoutX="14.0" layoutY="21.0" prefHeight="334.0" prefWidth="246.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);">
+                                            <columns>
+                                                <TableColumn prefWidth="160.39999103546143" text="Sarcina" />
+                                                <TableColumn prefWidth="84.40003967285156" text="Status" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                        <Button layoutX="300.0" layoutY="21.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to bottom, #1B4D3E, #2C3531); -fx-background-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Preia Sarcina" textFill="WHITE" />
+                                        <Button layoutX="300.0" layoutY="322.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to bottom, #1B4D3E, #2C3531); -fx-background-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Finalizare Sarcina" textFill="#fafafa" />
+                                        <Button layoutX="534.0" layoutY="335.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: rgba(0, 0, 0, 0); -fx-background-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Logout" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
