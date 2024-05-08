@@ -6,7 +6,7 @@ Raspuns: Ar trebui sa stiti pana in acest moment pe baza cunostintelor dobandite
 
  <h1>Exemplul 7 – URL Decoding</h1>
 Fisierul decodeURL.c, se va compila ca decodeURL.cgi. 
-
+```c
 #include <stdio.h>
 #include <string.h>
  
