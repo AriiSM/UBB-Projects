@@ -26,8 +26,8 @@ Meniul va avea o intaltime de 25px si va fi redat printr-o lista, acesta putand 
 </ul>"
 Sa se stilizeze acest cod HTML folosind clasele CSS dialog, alice si bob.
 
-Observatii:
 
+Observatii:
 Lista va putea contine mai mult de trei elemente plasate in clasele alice, bob (eventual si alte “personaje”);
 Colturile ferestrei de dialog vor fi rotunjite;
 Fereastra de dialog pentru fiecare personaj va avea o latime si o intaltime minima, valori ce se vor adapta in functie de dimensiunea textului spus de fiecare personaj si de dimensiunile ferestrei browserului;
