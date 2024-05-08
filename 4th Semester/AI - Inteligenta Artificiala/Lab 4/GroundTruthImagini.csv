@@ -1,0 +1,14 @@
+label_name,bbox_x,bbox_y,bbox_width,bbox_height,image_name,image_width,image_height
+bicycle,17,87,362,235,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike02.jpg,416,416
+bicycle,2,0,412,415,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike04.jpg,416,416
+bicycle,69,53,286,292,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike05.jpg,416,416
+bicycle,55,183,241,233,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike07.jpg,416,416
+bicycle,53,2,335,354,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike08.jpg,416,416
+bicycle,5,9,375,377,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike09.jpg,416,416
+bicycle,7,32,403,375,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike1.jpg,416,416
+bicycle,143,123,232,284,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike10.jpg,416,416
+bicycle,117,900,220,133,D:/FACULTATE/SEM4/AI/Lab4/bike_2/binClass.png,756,1496
+bicycle,158,147,187,261,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike03.jpg,416,416
+bicycle,63,144,134,248,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike03.jpg,416,416
+bicycle,155,146,189,261,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike06.jpg,416,416
+bicycle,64,144,130,249,D:/FACULTATE/SEM4/AI/Lab4/bike_2/bike06.jpg,416,416
