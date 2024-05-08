@@ -19,11 +19,11 @@ Meniul va avea o intaltime de 25px si va fi redat printr-o lista, acesta putand 
 6) Stilizati mai multe input-uri de tip text astfel incat completarea acestora sa se faca asemanator figurii de mai jos. Input-urile vor accepta un caracter per “patratica”. Nu este permisa folosirea mai multor input-uri pentru acelasi camp (pentru nume spre exemplu). Atributele CSS folosite (width, font-family, font-size, etc) se vor combina/corespunzator cu atributele HTML (maxlength) pentru un efect corespunzator. Nu se vor accepta mai multe caractere in input decat se pot introduce “vizual”.
 
 7) Se da urmatorul cod HTML:
-"<ul class="dialog">
+<!-- <ul class="dialog">
  	<li class="alice">Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
  	<li class="bob">Sed ut perspiciatis unde omnis iste nat us error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</li>
  	<li class="alice">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse</li>
-</ul>"
+</ul> -->
 Sa se stilizeze acest cod HTML folosind clasele CSS dialog, alice si bob.
 
 
