@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebooks</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script type="application/javascript" src="script.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container {
+            width: 70%;
+            text-align: center;
+        }
+        #filterNotebooks {
+            margin-bottom: 20px;
+        }
+        #filterNotebooks select, #filterNotebooks input {
+            font-size: 18px;
+            padding: 5px;
+        }
+        #notebooksTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        #notebooksTable, #notebooksTable td, #notebooksTable th {
+            border: 1px black solid;
+            font-size: 20px;
+            padding: 10px;
+        }
+        #clearFilters {
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form id="filterNotebooks">
+            <select name="filterBy">
+                <option value="producator">Producator</option>
+                <option value="procesor">Procesor</option>
+                <option value="memorie">Memorie</option>
+                <option value="capacitatehdd">Capacitate HDD</option>
+                <option value="placavideo">Placa Video</option>
+            </select>
+            <input type="text" name="filterValue" size="44" placeholder="Valoare pentru filtrare" />
+            <input type="submit" value="Filtrează" />
+        </form>
+        <table id="notebooksTable"></table>
+        <button id="clearFilters">Șterge filtrele</button>
+    </div>
+</body>
+</html>

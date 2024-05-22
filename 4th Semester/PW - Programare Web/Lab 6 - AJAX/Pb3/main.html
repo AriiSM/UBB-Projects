@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Updates</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" defer></script>
+    <script type="application/javascript" src="script.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            gap: 40px; /* Adjust gap between fieldsets */
+        }
+        fieldset {
+            width: 300px; /* Adjust width */
+            height: auto;
+            padding: 20px; /* Add padding */
+        }
+        legend {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #userIds {
+            width: 100%;
+            height: 200px; /* Adjust height */
+        }
+        #updateForm {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Id-uri</legend>
+        <select id="userIds" multiple size="8"></select>
+    </fieldset>
+    <fieldset>
+        <legend>Student update</legend>
+        <form id="updateForm" action="#">
+            <!-- Form fields will be dynamically loaded here -->
+        </form>
+    </fieldset>
+</body>
+</html>

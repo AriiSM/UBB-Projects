@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script type="application/javascript" src="script1.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of the viewport */
+            margin: 0; /* Remove default margin */
+            font-size: 30px;
+            font-weight: bold;
+        }
+        fieldset {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 50px; /* Increase the font size */
+            min-width: 500px; /* Set minimum width for fieldset */
+            margin: 0 20px; /* Add some horizontal spacing between fieldsets */
+            background-color: lightblue; /* Set background color to light blue */
+            border-color: blue; /* Set border color to blue */
+        }
+        #departures, #destinations {
+            font-size: 40px; /* Increase the font size */
+            min-width: 400px; /* Set minimum width for select */
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Statii Plecare</legend>
+        <select id="departures" multiple size="6"></select>
+    </fieldset>
+    <fieldset>
+        <legend>Statii Sosire</legend>
+        <select id="destinations" multiple size="6"></select>
+    </fieldset>
+</body>
+</html>
