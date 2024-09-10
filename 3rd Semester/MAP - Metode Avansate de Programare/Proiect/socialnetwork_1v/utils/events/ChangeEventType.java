@@ -1,5 +1,0 @@
-package com.example.socialnetwork_1v.utils.events;
-
-public enum ChangeEventType {
-    ADD,UPDATE,DELETE;
-}
