@@ -1,0 +1,124 @@
+import json
+
+data = [
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 1 first option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb1Sor(l):\n  txt = l.split()\n  lista = sorted(txt, reverse=True)\n  return lista[0]"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 1 second option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb1Sor2(l):\n  txt = l.split()\n  for i in range(len(txt)):\n        for j in range(0, len(txt)-i-1):\n            if txt[j] < txt[j+1]:\n                txt[j], txt[j+1] = txt[j+1], txt[j]\n  return txt[0]"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 2 first option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb2Euc1(x1,x2,y1,y2):\n  dx = int(x2)-int(x1)\n  dy = int(y2)-int(y1)\n  rez = math.sqrt(pow(dx,2) + pow(dy,2))\n  return rez"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 2 second option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb2Euc2(x1,x2,y1,y2):\n    dx = x2 - x1\n    dy = y2 - y1\n    distance = hypot(dx, dy)\n    return distance"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 3 first option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb3Cuv1(IP):\n  text = IP.split()\n  frecventa = {}\n  for cuv in text:\n      if cuv in frecventa:\n          frecventa[cuv] += 1\n      else:\n          frecventa[cuv] = 1\n  rezultat=[]\n  for key, value in frecventa.items():\n    if value == 1:\n      rezultat.append(key)\n  return rezultat"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 3 second option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb3Cuv2(IP):\n  text = IP.split()\n  lista = sorted(text)\n  rezultat=[]\n  aparitii = defaultdict(list)\n  for cuvant in lista:\n    aparitii[cuvant].append(cuvant)\n  rezultat = []\n  for cuvant, lista_aparitii in aparitii.items():\n    if len(lista_aparitii) == 1:\n      rezultat.append(lista_aparitii[0])\n  return rezultat"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 4 first option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb4Rep1(l):\n  frecventa = {}\n  nr = 0\n  for i in l:\n    if i != ' ':\n      if i in frecventa:\n          frecventa[i] += 1\n      else:\n          frecventa[i] = 1\n      if frecventa[i] == 2:\n        nr = i\n        break\n  return nr"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 4 second option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb4Rep2(l):\n  numere = set()\n  for i in l:\n    if i != ' ':\n      if i in numere:\n        return i\n      else:\n        numere.add(i)\n  return 0"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 5 first option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb5Max(l):\n  frecventa = {}\n  nr = 0\n  for i in l:\n    if i in frecventa:\n        frecventa[i] += 1\n    else:\n        frecventa[i] = 1\n  lung = int(len(l) / 2)\n  rezultat = set()\n  for key, value in frecventa.items():\n    if value >= lung:\n      rezultat.add(key)\n  return rezultat"
+            }
+        ]
+    },
+    {
+        "conversations": [
+            {
+                "from": "user",
+                "value": "I want problem 5 second option"
+            },
+            {
+                "from": "assistant",
+                "value": "Here it is:\ndef Pb5Max2(l):\n  lista = sorted(l)\n  lung = int(len(l) / 2)\n  rezultat=[]\n  aparitii = defaultdict(list)\n  for nr in lista:\n    aparitii[nr].append(nr)\n  for nr, ap in aparitii.items():\n    if len(ap) >= lung:\n      rezultat.append(ap[0])\n  return rezultat"
+            }
+        ]
+    }
+]

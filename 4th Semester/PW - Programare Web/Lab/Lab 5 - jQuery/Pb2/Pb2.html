@@ -1,0 +1,24 @@
+<!--jQuery: Un formular web va permite unui utilizator sa isi introduca numele, data nasterii, varsta si adresa de e-mail. La apasarea unui buton “Trimite” se vor valida toate aceste campuri daca sunt completate si daca sunt completate corect. Daca da, se va afisa un mesaj “Datele sunt completate corect”, altfel, se va afisa un mesaj de genul “Campurile nume si varsta nu sunt completate corect”, aceste campuri fiind “incercuite” intr-o bordura rosie. Toate aceste validari vor fi implementate pe client in JavaScript -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problema 2 - jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Pb2.js" defer></script>
+</head>
+
+<body>
+
+    <form name="myForm" action="" method="post">
+        Name: <input type="text" name="fname" id="fname"><br><br>
+        Data nasterii: <input type="date" name="fdata" id="fdata"><br><br>
+        Varsta: <input type="text" name="fvarsta" id="varsta" readonly><br><br>
+        Email: <input type="text" name="femail" id="femail"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!-- jQuery: Sa se scrie o pagina HTML ce contine un tabel cu cel putin trei coloane si cel putin trei linii. Prima coloana reprezinta antetul. Cand utilizatorul va da click pe o celula din antet, elementele din tabel se vor sorta crescator sau descrescator in functie de valorile prezente pe linia corespunzatoare antetului pe care s-a dat click. Codul JavaScript va fi reutilizabil si va permite crearea unui comportament de tabel sortabil pentru mai multe tabele existente in cadrul paginii.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problema 4 - jQuery</title>
+</head>
+
+<body>
+
+    <table id="myTable" style="width: 180px; margin-top: 1em;">
+        <tbody>
+            <tr>
+                <th class="sort-header">Fructe</th>
+                <td>Mere</td>
+                <td>Pere</td>
+            </tr>
+            <tr>
+                <th class="sort-header">Pret</th>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th class="sort-header">Cantitate</th>
+                <td>8</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table id="mySecondTable" style="width: 180px; margin-top: 1em;">
+        <tbody>
+            <tr>
+                <th class="sort-header">Fructe</th>
+                <th class="sort-header">Pret</th>
+                <th class="sort-header">Cantitate</th>
+            </tr>
+            <tr>
+                <td>Mere</td>
+                <td>3</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Pere</td>
+                <td>4</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Pb4.js"></script>
+</body>
+
+</html>

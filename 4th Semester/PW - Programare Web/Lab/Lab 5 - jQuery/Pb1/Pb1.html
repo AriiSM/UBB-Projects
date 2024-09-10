@@ -1,0 +1,42 @@
+<!--jQUERY: Sa se scrie o pagina HTML ce contine doua liste cu mai multe elemente fiecare, create cu ajutorul tagului <select>. La un dubluclick pe un element al primei liste, acesta va fi mutat in lista a doua si invers -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problema 1 - jQuery</title>
+    <style>
+        /* CSS - cum arat box urile si scrisul */
+        select {
+            width: 500px; /* latime */
+            height: 140px; /* inaltime */
+
+            font-weight: bold; /* bold pe scris */
+            font-size: 20px; /* dimensiunea scisului */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Pb1.js" defer></script>
+</head>
+
+<body>
+    <h1>Optiuni: </h1>
+    <ul>
+        <select id="unu" multiple="multiple">
+            <option value="Optiune1">1 Cartofi copti</option>
+            <option value="Optiune2">2 Cartofi prajiti</option>
+            <option value="Optiune3">3 Cartofi piure</option>
+        </select>
+    </ul>
+    <h1>Comnada: </h1>
+    <ul>
+        <select id="doi" multiple="multiple">
+            <option value="Optiune4">4 Cartofi pisati cu telemea si smantana</option>
+            <option value="Optiune5">5 Cartofi pisati cu sare si patrunjel</option>
+            <option value="Optiune6">6 Cartofi copti umpluti cu branza</option>
+            <option value="Optiune7">7 Cartofi copti umpluti cu ciuperci si branza</option>
+            <option value="Optiune8">8 Cartofi dulci</option>
+        </select>
+    </ul>
+</body>
+
+</html>

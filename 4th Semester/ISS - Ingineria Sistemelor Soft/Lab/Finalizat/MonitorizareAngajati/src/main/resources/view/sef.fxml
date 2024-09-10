@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="503.0" prefWidth="916.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.monitorizareangajati.controler.SefControler">
+    <children>
+        <Pane prefHeight="503.0" prefWidth="916.0">
+            <children>
+                <TabPane prefHeight="503.0" prefWidth="916.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Angajati">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tabelAngajati" prefHeight="219.0" prefWidth="916.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);">
+                                            <columns>
+                                                <TableColumn fx:id="columnNume" prefWidth="698.7999877929688" style="-fx-background-color: #236852; -fx-text-fill: white;" text="Nume" />
+                                                <TableColumn fx:id="columnStatus" prefWidth="217.2000732421875" style="-fx-background-color: #236852; -fx-text-fill: white;" text="Status" />
+                                            </columns>
+                                        </TableView>
+                                        <TextArea fx:id="txt_descriere" layoutX="25.0" layoutY="295.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="125.0" prefWidth="200.0" promptText="Descriere sarcina" />
+                                        <Button layoutX="248.0" layoutY="393.0" mnemonicParsing="false" onAction="#handleTrimiteSarcina" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531); -fx-text-fill: #f4f4f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Trimite sarcina" textFill="WHITE">
+                                            <font>
+                                                <Font size="13.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Sarcini">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tabelAtribuireSarcini" prefHeight="303.0" prefWidth="916.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531);">
+                                            <columns>
+                                                <TableColumn fx:id="columnAngajat" prefWidth="393.20001220703125" style="-fx-background-color: #236852; -fx-text-fill: white;" text="Angajat" />
+                                                <TableColumn fx:id="columnSarcina2" prefWidth="375.5999755859375" style="-fx-background-color: #236852; -fx-text-fill: white;" text="Sarcina" />
+                                                <TableColumn fx:id="columnStatusSarcina" prefWidth="147.0" style="-fx-background-color: #236852; -fx-text-fill: white;" text="Status" />
+                                            </columns>
+                                        </TableView>
+                                        <Button layoutX="412.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleStergeSarcina" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531); -fx-text-fill: #f4f4f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Sterge Sarcina" />
+                                        <Button layoutX="258.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleModificaSarcina" prefHeight="32.0" prefWidth="114.0" style="-fx-background-color: linear-gradient(to bottom right, #1B4D3E, #2C3531); -fx-text-fill: #f4f4f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" text="Modifica Sarcina" />
+                                        <TextArea fx:id="tb_SarcinaNoua" layoutX="26.0" layoutY="360.0" prefHeight="105.0" prefWidth="200.0" promptText="Descriere Sarcina" />
+                                        <TextField fx:id="tb_AngajatNou" alignment="CENTER" layoutX="26.0" layoutY="321.0" prefHeight="26.0" prefWidth="200.0" promptText="Angajat nou" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

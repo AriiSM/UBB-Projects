@@ -1,0 +1,42 @@
+<!-- JQuery: Sa se implementeze folosind JavaScript urmatoarea problema. O matrice cu numar par de elemente, reprezentata vizual sub forma unui tabel, contine perechi de numere initial ascunse. Daca utilizatorul da click pe doua celule ale tabelului ce contin numere egale acestea vor fi afisate si vor ramane afisate. Daca numerele continute in cele doua celule nu sunt egale, vor fi ascunse din nou dupa un numar de 2, 3 secunde. Jocul se termina cand toate perechile de numere au fost ghicite. Dupa prima implementare a jocului, se va crea o noua versiune in care numerele vor fi inlocuite cu imagini (ce contin fructe spre exemplu, sau “profi” de pe pagina facultatii). Problema mai este recunoscuta si sub numele de Memory Game-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div#board {
+            background: lightgreen;
+            border: white 1px solid;
+            width: 640px;
+            height: 640px;
+            padding: 24px;
+            margin: auto;
+        }
+        
+        div#board>div {
+            border: white 1px solid;
+            width: 45px;
+            height: 45px;
+            float: left;
+            margin: 10px;
+            padding: 20px;
+            font-size: 64px;
+            cursor: pointer;
+            text-align: center;
+            background-color: pink;
+        }
+    </style>
+    <title>Problema 3 - jQuery</title>
+</head>
+
+<body>
+    <h1 align="center">Pepene game</h1>
+    <div id="board"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Pb3.js" defer></script>
+</body>
+
+</html>
