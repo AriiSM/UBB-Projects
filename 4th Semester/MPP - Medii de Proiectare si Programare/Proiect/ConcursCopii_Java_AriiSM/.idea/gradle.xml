@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CCClientFx" />
+            <option value="$PROJECT_DIR$/CCModel" />
+            <option value="$PROJECT_DIR$/CCNetworking" />
+            <option value="$PROJECT_DIR$/CCPersistence" />
+            <option value="$PROJECT_DIR$/CCService" />
+            <option value="$PROJECT_DIR$/CCServices" />
+            <option value="$PROJECT_DIR$/RestServices" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

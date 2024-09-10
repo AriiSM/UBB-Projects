@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/CCPersistence/src/main/java/server/Repo_Jdbc/ConcursDBRepository.java" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/CCPersistence/src/main/java/server/Repo_Jdbc/InscriereDBRepository.java" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/CCPersistence/src/main/java/server/Repo_Jdbc/OrganizatorDBRepository.java" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/CCPersistence/src/main/java/server/Repo_Jdbc/ParticipantDBRepository.java" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/CCPersistence/src/main/java/server/Repo_REST/ConcursDBRepository_REST.java" dialect="SQLite" />
+  </component>
+</project>
