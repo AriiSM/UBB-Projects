@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork_1v.controller.Organizat.CreareContController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c0bcbc;">
+         <children>
+            <TextField fx:id="lblNume" layoutX="257.0" layoutY="60.0" />
+            <TextField fx:id="lblPrenume" layoutX="257.0" layoutY="122.0" />
+            <TextField fx:id="lblUsername" layoutX="257.0" layoutY="188.0" />
+            <TextField fx:id="lblParola" layoutX="257.0" layoutY="251.0" />
+            <Label layoutX="146.0" layoutY="62.0" text="Nume">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="124.0" text="Prenume">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="190.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="253.0" text="Parola">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="514.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleSave" style="-fx-background-color: #c0bcbc;" text="Save" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

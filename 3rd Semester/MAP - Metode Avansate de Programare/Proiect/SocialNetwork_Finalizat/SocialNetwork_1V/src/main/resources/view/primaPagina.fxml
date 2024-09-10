@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork_1v.controller.Organizat.PrimaPg__Login_Controler">
+   <children>
+      <ImageView fitHeight="370.0" fitWidth="657.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-2.5625" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imagini/background.jpg" />
+         </image></ImageView>
+      <Button fx:id="start" layoutX="277.0" layoutY="170.0" mnemonicParsing="false" onAction="#handdleStart" prefHeight="10.0" prefWidth="104.0" style="-fx-background-color: linear-gradient(#ffffff, #c0bcbc);" text="START" textFill="#3d86c1" AnchorPane.bottomAnchor="167.4" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

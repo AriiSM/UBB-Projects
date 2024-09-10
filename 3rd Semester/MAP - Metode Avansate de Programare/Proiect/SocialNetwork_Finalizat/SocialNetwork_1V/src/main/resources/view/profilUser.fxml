@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork_1v.controller.Organizat.UTILIZATOR.ProfilController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="443.0" style="-fx-background-color: #c0bcbc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="161.0" fitWidth="186.0" layoutX="141.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagini/profilePicture.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblCONT" alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="200.0" prefHeight="41.0" prefWidth="245.0" text="Label">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCereri" layoutX="34.0" layoutY="441.0" mnemonicParsing="false" onAction="#handdleCereri" text="Cereri_de_prietenie" />
+            <Button fx:id="btnMesaje" layoutX="326.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleMesaj" text="Mesaje" />
+            <TableView fx:id="tabelPrietenii" layoutX="89.0" layoutY="251.0" prefHeight="175.0" prefWidth="254.0" style="-fx-background-color: #c0bcbc;">
+              <columns>
+                <TableColumn fx:id="columnNumePrieteni" prefWidth="250.99998474121094" style="-fx-background-color: grey;" text="Prieteni" />
+              </columns>
+            </TableView>
+         </children></Pane>
+   </children>
+</AnchorPane>
