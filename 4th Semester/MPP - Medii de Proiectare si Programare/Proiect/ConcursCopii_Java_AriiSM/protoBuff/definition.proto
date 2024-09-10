@@ -1,0 +1,111 @@
+syntax = "proto3";
+package server.protocol_Proto;
+
+import "google/protobuf/timestamp.proto";
+
+//option java_package = "ro.mpp.ProtobuffProtocol";
+option java_outer_classname = "Protobuf";
+
+message OrganizaotrPB{
+  string lastName = 1;
+  string firstName = 2;
+  string parola = 3;
+}
+
+message ConcursPB{
+  int32 id = 1;
+  string proba = 2;
+  string categorie = 3;
+}
+
+message ConcursFaraIdPB{
+  string proba = 1;
+  string categorie = 2;
+}
+
+message InscrierePB{
+  int32 id = 1;
+  int32 idConcurs = 2;
+  int32 idParticipant = 3;
+}
+
+message InscriereFullPB{
+  int32 id = 1;
+  ConcursPB concurs = 2;
+  ParticipantPB participant = 3;
+}
+
+message InscriereFaraIdPB{
+  int32 idConcurs = 1;
+  int32 idParticipant = 2;
+}
+
+message ParticipantPB{
+  int32 id = 1;
+  string lastName = 2;
+  string firstName = 3;
+  int32 age = 4;
+}
+
+message ParticipantFaraIdPB{
+  string lastName = 1;
+  string firstName = 2;
+  int32 age = 3;
+}
+
+message Request{
+  enum RequestType{
+    LOGIN = 0;
+    LOGOUT = 1;
+    INSCRIERE_PARTICIPANT = 2;
+    FIND_ACCOUNT_ORGANIZATOR = 3;
+    FIND_PARTICIPANT_NUME_PRENUME_VARSTA = 4;
+    FIND_ALL_PARTICIPANTS = 5;
+    FILTER_PROBA_CATEGORIE_PARTICIPANTI = 6;
+    FIND_CONCURS_PROBA_CATEGORIE = 7;
+    NUMAR_PROBE_PENTRU_PARTICIPANT = 8;
+    SAVE_INSCRIERE = 9;
+    SAVE_PARTICIPANT = 10;
+    SAVE_CONCURS = 11;
+    CREATE_AND_SAVE_CONCURS = 12;
+    CREATE_AND_SAVE_PARTICIPANT = 13;
+    NEED_CREATE_PARTICIPANT = 14;
+    FIND_INSCRIERE_PERS_CONC = 15;
+    FILTER_PROBA_CATEGORIE_PARTICIPANT = 16;
+  }
+  RequestType type = 1;
+  OrganizaotrPB org = 2;
+  ConcursPB concurs = 3;
+  ConcursFaraIdPB concursFaraId = 4;
+  ParticipantPB participant = 5;
+  ParticipantFaraIdPB participantFaraId = 6;
+  InscrierePB inscriere = 7;
+  InscriereFaraIdPB inscriereFaraId = 8;
+  InscriereFullPB inscriereFull = 9;
+  int32 numarProbePentruParticipanti = 10;
+  repeated ParticipantPB participantList = 11;
+  repeated InscrierePB inscrieriList = 12;
+  repeated ConcursPB concursList = 13;
+}
+
+message Response{
+  enum ResponseType{
+    OK = 0;
+    SAVE_INSCRIERE = 1;
+    ERROR = 2;
+    UPDATE = 3;
+    NEED_CREATE_CONCURS = 4;
+    NEED_CREATE_PARTICIPANT = 5;
+  }
+  ResponseType type = 1;
+  OrganizaotrPB org = 2;
+  ConcursPB concurs = 3;
+  ParticipantPB participant = 4;
+  InscrierePB inscriere = 5;
+  InscriereFullPB inscriereFull = 6;
+  int32 numarProbePentruParticipanti = 7;
+  string message=8;
+  repeated ParticipantPB participantList = 9;
+  repeated InscrierePB inscrieriList = 10;
+  repeated ConcursPB concursList = 11;
+}

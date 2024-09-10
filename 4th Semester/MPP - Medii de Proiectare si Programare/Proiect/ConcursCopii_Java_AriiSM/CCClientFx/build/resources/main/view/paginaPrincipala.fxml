@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="478.0" prefWidth="885.0" style="-fx-background-color: linear-gradient(to bottom right, #6E78D6FF, #da70d6);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.PaginaPrincipalaControler">
+   <TabPane layoutY="88.0" prefHeight="391.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to bottom right, #6E78D6FF, #da70d6);" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Pb Principala">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                      <!-- Fundal în gradient de la mov la albastru -->
+                      <Pane prefHeight="363.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to bottom right, #6E78D6FF, #da70d6);">
+                        <children>
+                           <TableView fx:id="tabel_afisare" prefHeight="235.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to bottom right, #6E78D6FF, #da70d6);">
+                             <columns>
+                               <TableColumn fx:id="proba_column" prefWidth="75.0" text="Proba" />
+                               <TableColumn fx:id="categorie_column" prefWidth="75.0" text="Categorie" />
+                                 <TableColumn fx:id="inscrisi_column" prefWidth="75.0" text="Inscrisi" />
+                             </columns>
+                              <columnResizePolicy>
+                                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                              </columnResizePolicy>
+                           </TableView>
+                           <Button layoutX="821.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+                        </children>
+                     </Pane>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+       <Tab text="Cautare">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <TableView fx:id="tabel_cautare" prefHeight="276.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to bottom right, #6E78D6FF, #da70d6);">
+                       <columns>
+                         <TableColumn fx:id="nume_column" prefWidth="75.0" text="nume" />
+                         <TableColumn fx:id="prenume_column" prefWidth="75.0" text="prenume" />
+                           <TableColumn fx:id="varsta_column" prefWidth="75.0" text="varsta" />
+                       </columns>
+                        <columnResizePolicy>
+                           <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                        </columnResizePolicy>
+                     </TableView>
+                     <Button layoutX="379.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleCautare" text="Cauta" />
+                     <ComboBox fx:id="combo_proba" layoutX="14.0" layoutY="300.0" prefWidth="150.0" promptText="Proba" />
+                     <ComboBox fx:id="combo_categorie" layoutX="192.0" layoutY="300.0" prefWidth="150.0" promptText="Categorie" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+         <Tab text="Inscriere Participanti">
+             <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <TextField fx:id="tb_nume" alignment="CENTER" layoutX="14.0" layoutY="45.0" promptText="Nume" />
+                     <TextField fx:id="tb_prenume" alignment="CENTER" layoutX="14.0" layoutY="87.0" promptText="Prenume" />
+                     <ComboBox fx:id="combo_proba_Inscriere" layoutX="13.0" layoutY="168.0" prefWidth="150.0" promptText="Probe" />
+                     <Button layoutX="61.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleInscriere" text="Inscrie" />
+                     <TextField fx:id="tb_varsta" alignment="CENTER" layoutX="15.0" layoutY="128.0" promptText="Varsta" />
+                  </children></AnchorPane>
+             </content>
+         </Tab>
+     </tabs>
+   </TabPane>
+   <Label fx:id="lbl_nume" layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="238.0" text="Label" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

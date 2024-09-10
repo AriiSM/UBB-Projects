@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #FFDAB9; /* Peach Puff */
+    --secondary-color: #FF69B4; /* Hot Pink */
+    --tertiary-color: #1E90FF; /* Dodger Blue */
+    --font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+h1 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 50px; /* Ajustează dimensiunea titlului */
+}
+
+button, input[type="submit"] {
+    background-color: var(--tertiary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Ajustează dimensiunea butoanelor */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+    border-radius: 0.75em; /* Rounded corners */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container, .row-container {
+    width: 60%;
+    height: 37.5em;
+    overflow-y: auto;
+}
+
+table {
+    margin: auto;
+    color: #191970; /* Midnight Blue */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ADD8E6; /* Light Blue */
+    padding: 8px;
+}
+
+th {
+    background-color: #FFD700; /* Gold */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F0E68C; /* Khaki */
+}
+
+tr:hover {
+    background-color: #FFB6C1; /* Light Pink */
+}
+
+form {
+    padding: 0.625em;
+    font-size: 1.5em;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}

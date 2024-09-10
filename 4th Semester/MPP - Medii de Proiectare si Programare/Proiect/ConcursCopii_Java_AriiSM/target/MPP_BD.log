@@ -1,0 +1,252 @@
+05 Apr 2024 13:37:08,865 INFO  ro.mpp2024.repository.CDB.ParticipantDBRepository 28 <init> - Initializing ParticipantDBRepository with proprties: {jdbc.url=jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB}
+05 Apr 2024 13:37:08,868 INFO  ro.mpp2024.repository.CDB.OrganizatorDBRepository 27 <init> - Initializing OrganizatorDBRepository with proprties: {jdbc.url=jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB}
+05 Apr 2024 13:37:08,869 INFO  ro.mpp2024.repository.CDB.InscriereDBRepository 31 <init> - Initializing InscriereDBRepository with proprties: {jdbc.url=jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB}
+05 Apr 2024 13:37:08,869 INFO  ro.mpp2024.repository.CDB.ParticipantDBRepository 28 <init> - Initializing ParticipantDBRepository with proprties: {jdbc.url=jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB}
+05 Apr 2024 13:37:08,870 INFO  ro.mpp2024.repository.CDB.ConcursDBRepository 26 <init> - Initializing ConcursDBRepository with proprties: {jdbc.url=jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB}
+05 Apr 2024 13:37:08,870 INFO  ro.mpp2024.repository.CDB.ConcursDBRepository 26 <init> - Initializing ConcursDBRepository with proprties: {jdbc.url=jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB}
+05 Apr 2024 13:37:12,355 TRACE ro.mpp2024.repository.CDB.OrganizatorDBRepository 150 findAccount - Enter OrganizatorDBRepository gasesteUserDupaParola: 123
+05 Apr 2024 13:37:12,355 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,355 TRACE ro.mpp2024.repository.JdbcUtils 23 getNewConnection - Enter
+05 Apr 2024 13:37:12,355 INFO  ro.mpp2024.repository.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB
+05 Apr 2024 13:37:12,356 INFO  ro.mpp2024.repository.JdbcUtils 29 getNewConnection - user: null
+05 Apr 2024 13:37:12,356 INFO  ro.mpp2024.repository.JdbcUtils 30 getNewConnection - pass: null
+05 Apr 2024 13:37:12,483 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] pragma busy_timeout=3000
+05 Apr 2024 13:37:12,485 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,486 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Organizator WHERE parola = ? AND nume = ? AND prenume = ? 
+05 Apr 2024 13:37:12,509 TRACE ro.mpp2024.repository.CDB.OrganizatorDBRepository 177 findAccount - Exit with(Organizator {Nume Oficiu: O1'nume :Stan'prenume: Ariana'})
+05 Apr 2024 13:37:12,544 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 61 findAll - Enter ParticipantDBRepository findAll!
+05 Apr 2024 13:37:12,544 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,544 TRACE ro.mpp2024.repository.JdbcUtils 23 getNewConnection - Enter
+05 Apr 2024 13:37:12,544 INFO  ro.mpp2024.repository.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB
+05 Apr 2024 13:37:12,544 INFO  ro.mpp2024.repository.JdbcUtils 29 getNewConnection - user: null
+05 Apr 2024 13:37:12,544 INFO  ro.mpp2024.repository.JdbcUtils 30 getNewConnection - pass: null
+05 Apr 2024 13:37:12,544 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] pragma busy_timeout=3000
+05 Apr 2024 13:37:12,545 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,545 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Participant
+05 Apr 2024 13:37:12,546 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 81 findAll - Exit with([Participant {varsta: 12'nume :Rusu'prenume: Dana'}])
+05 Apr 2024 13:37:12,701 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_6_8
+05 Apr 2024 13:37:12,702 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,702 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,702 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,703 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] begin;
+05 Apr 2024 13:37:12,703 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] commit;
+05 Apr 2024 13:37:12,704 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,712 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_9_11
+05 Apr 2024 13:37:12,713 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,713 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,714 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,714 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,714 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_9_11
+05 Apr 2024 13:37:12,714 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,714 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,714 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,715 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,716 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_9_11
+05 Apr 2024 13:37:12,716 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,716 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,716 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,717 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,779 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_12_15
+05 Apr 2024 13:37:12,779 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,779 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,779 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,779 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,780 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_12_15
+05 Apr 2024 13:37:12,780 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,780 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,780 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,780 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,780 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_12_15
+05 Apr 2024 13:37:12,780 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,780 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,781 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,781 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,781 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=CAUTAREA_UNEI_COMORI, categorie=VARSTA_6_8
+05 Apr 2024 13:37:12,781 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,781 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,781 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,781 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,782 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=CAUTAREA_UNEI_COMORI, categorie=VARSTA_6_8
+05 Apr 2024 13:37:12,782 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,782 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,782 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,782 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,782 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=CAUTAREA_UNEI_COMORI, categorie=VARSTA_6_8
+05 Apr 2024 13:37:12,782 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,782 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,782 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,783 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,784 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_6_8
+05 Apr 2024 13:37:12,784 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,784 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,784 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,784 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,786 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_9_11
+05 Apr 2024 13:37:12,786 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,786 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,787 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,787 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,788 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=DESEN, categorie=VARSTA_12_15
+05 Apr 2024 13:37:12,788 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,789 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,789 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,789 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,790 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=CAUTAREA_UNEI_COMORI, categorie=VARSTA_6_8
+05 Apr 2024 13:37:12,791 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,791 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,791 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,791 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,793 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=CAUTAREA_UNEI_COMORI, categorie=VARSTA_9_11
+05 Apr 2024 13:37:12,793 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,793 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,793 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,794 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,795 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=CAUTAREA_UNEI_COMORI, categorie=VARSTA_12_15
+05 Apr 2024 13:37:12,795 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,795 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,796 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,796 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,798 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=POEZIE, categorie=VARSTA_6_8
+05 Apr 2024 13:37:12,798 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,798 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,798 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,798 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,800 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=POEZIE, categorie=VARSTA_9_11
+05 Apr 2024 13:37:12,800 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,800 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,800 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,800 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:12,802 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 137 filterProbaCategorie - Enter ParticipantDBRepository filterProbaCategorie: proba=POEZIE, categorie=VARSTA_12_15
+05 Apr 2024 13:37:12,802 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:12,802 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:12,802 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT P.id, P.nume, P.prenume, P.varsta FROM Participant P INNER JOIN Inscriere I ON P.id=I.id_participant INNER JOIN Concurs C on C.id = I.id_concurs WHERE C.categorie = ? and C.proba = ?
+05 Apr 2024 13:37:12,802 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 159 filterProbaCategorie - Exit with([])
+05 Apr 2024 13:37:18,785 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 139 findConcursProbaCategorie - Enter ConcursDBRepository findOne: POEZIE, VARSTA_12_15
+05 Apr 2024 13:37:18,785 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:18,785 TRACE ro.mpp2024.repository.JdbcUtils 23 getNewConnection - Enter
+05 Apr 2024 13:37:18,785 INFO  ro.mpp2024.repository.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB
+05 Apr 2024 13:37:18,786 INFO  ro.mpp2024.repository.JdbcUtils 29 getNewConnection - user: null
+05 Apr 2024 13:37:18,786 INFO  ro.mpp2024.repository.JdbcUtils 30 getNewConnection - pass: null
+05 Apr 2024 13:37:18,787 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] pragma busy_timeout=3000
+05 Apr 2024 13:37:18,787 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:18,787 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Concurs WHERE proba = ? and categorie = ?
+05 Apr 2024 13:37:18,788 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] begin;
+05 Apr 2024 13:37:18,788 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] commit;
+05 Apr 2024 13:37:18,788 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 162 findConcursProbaCategorie - Exit
+05 Apr 2024 13:37:18,791 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 89 save - Enter ConcursDBRepository save: Concurs {categorie=VARSTA_12_15, proba=POEZIE}
+05 Apr 2024 13:37:18,791 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:18,791 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:18,791 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] INSERT INTO Concurs(categorie,proba) VALUES (?,?)
+05 Apr 2024 13:37:18,796 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT last_insert_rowid();
+05 Apr 2024 13:37:18,796 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 103 save - Saved1 instances
+05 Apr 2024 13:37:18,796 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 108 save - Exit with(Concurs {categorie=VARSTA_12_15, proba=POEZIE})
+05 Apr 2024 13:37:18,796 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 165 findParticipantNumePrenumeVarsta - Enter ParticipantDBRepository findOne: Rusu,Dana,12
+05 Apr 2024 13:37:18,796 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:18,796 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:18,796 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Participant WHERE nume = ? and prenume = ? and varsta = ?
+05 Apr 2024 13:37:18,797 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 181 findParticipantNumePrenumeVarsta - findOneParticipant {varsta: 12'nume :Rusu'prenume: Dana'}
+05 Apr 2024 13:37:18,797 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 188 findParticipantNumePrenumeVarsta - Exit with(Participant {varsta: 12'nume :Rusu'prenume: Dana'})
+05 Apr 2024 13:37:18,797 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 194 numarProbePentruParticipant - Enter ParticipantDBRepository numarProbePentruParticipant: 33
+05 Apr 2024 13:37:18,797 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:18,797 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:18,797 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT COUNT(*) FROM Inscriere WHERE id_participant = ?
+05 Apr 2024 13:37:18,797 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 208 numarProbePentruParticipant - Exit with(0)
+05 Apr 2024 13:37:18,798 TRACE ro.mpp2024.repository.CDB.InscriereDBRepository 96 save - Enter InscriereDBRepository save: Inscriere {participant=Participant {varsta: 12'nume :Rusu'prenume: Dana'}, concurs=Concurs {categorie=VARSTA_12_15, proba=POEZIE}}
+05 Apr 2024 13:37:18,798 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:18,798 TRACE ro.mpp2024.repository.JdbcUtils 23 getNewConnection - Enter
+05 Apr 2024 13:37:18,798 INFO  ro.mpp2024.repository.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/MPP/ConcursCopiiBazaDeDate/ConcursCopiiDB
+05 Apr 2024 13:37:18,798 INFO  ro.mpp2024.repository.JdbcUtils 29 getNewConnection - user: null
+05 Apr 2024 13:37:18,798 INFO  ro.mpp2024.repository.JdbcUtils 30 getNewConnection - pass: null
+05 Apr 2024 13:37:18,800 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] pragma busy_timeout=3000
+05 Apr 2024 13:37:18,800 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:18,800 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] INSERT INTO Inscriere(id_participant, id_concurs) VALUES (?,?)
+05 Apr 2024 13:37:18,802 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] begin;
+05 Apr 2024 13:37:18,802 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] commit;
+05 Apr 2024 13:37:18,802 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT last_insert_rowid();
+05 Apr 2024 13:37:18,802 TRACE ro.mpp2024.repository.CDB.InscriereDBRepository 106 save - Saved1 instances
+05 Apr 2024 13:37:18,802 TRACE ro.mpp2024.repository.CDB.InscriereDBRepository 111 save - Exit with(Inscriere {participant=Participant {varsta: 12'nume :Rusu'prenume: Dana'}, concurs=Concurs {categorie=VARSTA_12_15, proba=POEZIE}})
+05 Apr 2024 13:37:21,532 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 139 findConcursProbaCategorie - Enter ConcursDBRepository findOne: CAUTAREA_UNEI_COMORI, VARSTA_12_15
+05 Apr 2024 13:37:21,532 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:21,532 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:21,532 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Concurs WHERE proba = ? and categorie = ?
+05 Apr 2024 13:37:21,532 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 162 findConcursProbaCategorie - Exit
+05 Apr 2024 13:37:21,532 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 89 save - Enter ConcursDBRepository save: Concurs {categorie=VARSTA_12_15, proba=CAUTAREA_UNEI_COMORI}
+05 Apr 2024 13:37:21,532 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:21,534 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:21,534 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] INSERT INTO Concurs(categorie,proba) VALUES (?,?)
+05 Apr 2024 13:37:21,537 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT last_insert_rowid();
+05 Apr 2024 13:37:21,537 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 103 save - Saved1 instances
+05 Apr 2024 13:37:21,537 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 108 save - Exit with(Concurs {categorie=VARSTA_12_15, proba=CAUTAREA_UNEI_COMORI})
+05 Apr 2024 13:37:21,537 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 165 findParticipantNumePrenumeVarsta - Enter ParticipantDBRepository findOne: Rusu,Dana,12
+05 Apr 2024 13:37:21,538 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:21,538 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:21,538 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Participant WHERE nume = ? and prenume = ? and varsta = ?
+05 Apr 2024 13:37:21,538 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 181 findParticipantNumePrenumeVarsta - findOneParticipant {varsta: 12'nume :Rusu'prenume: Dana'}
+05 Apr 2024 13:37:21,538 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 188 findParticipantNumePrenumeVarsta - Exit with(Participant {varsta: 12'nume :Rusu'prenume: Dana'})
+05 Apr 2024 13:37:21,538 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 194 numarProbePentruParticipant - Enter ParticipantDBRepository numarProbePentruParticipant: 33
+05 Apr 2024 13:37:21,538 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:21,538 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:21,539 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT COUNT(*) FROM Inscriere WHERE id_participant = ?
+05 Apr 2024 13:37:21,539 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 208 numarProbePentruParticipant - Exit with(1)
+05 Apr 2024 13:37:21,539 TRACE ro.mpp2024.repository.CDB.InscriereDBRepository 96 save - Enter InscriereDBRepository save: Inscriere {participant=Participant {varsta: 12'nume :Rusu'prenume: Dana'}, concurs=Concurs {categorie=VARSTA_12_15, proba=CAUTAREA_UNEI_COMORI}}
+05 Apr 2024 13:37:21,539 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:21,539 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:21,539 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] INSERT INTO Inscriere(id_participant, id_concurs) VALUES (?,?)
+05 Apr 2024 13:37:21,542 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT last_insert_rowid();
+05 Apr 2024 13:37:21,542 TRACE ro.mpp2024.repository.CDB.InscriereDBRepository 106 save - Saved1 instances
+05 Apr 2024 13:37:21,542 TRACE ro.mpp2024.repository.CDB.InscriereDBRepository 111 save - Exit with(Inscriere {participant=Participant {varsta: 12'nume :Rusu'prenume: Dana'}, concurs=Concurs {categorie=VARSTA_12_15, proba=CAUTAREA_UNEI_COMORI}})
+05 Apr 2024 13:37:24,099 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 139 findConcursProbaCategorie - Enter ConcursDBRepository findOne: DESEN, VARSTA_12_15
+05 Apr 2024 13:37:24,099 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:24,099 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:24,099 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Concurs WHERE proba = ? and categorie = ?
+05 Apr 2024 13:37:24,100 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 162 findConcursProbaCategorie - Exit
+05 Apr 2024 13:37:24,100 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 89 save - Enter ConcursDBRepository save: Concurs {categorie=VARSTA_12_15, proba=DESEN}
+05 Apr 2024 13:37:24,100 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:24,100 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:24,100 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] INSERT INTO Concurs(categorie,proba) VALUES (?,?)
+05 Apr 2024 13:37:24,104 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT last_insert_rowid();
+05 Apr 2024 13:37:24,105 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 103 save - Saved1 instances
+05 Apr 2024 13:37:24,105 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 108 save - Exit with(Concurs {categorie=VARSTA_12_15, proba=DESEN})
+05 Apr 2024 13:37:24,105 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 165 findParticipantNumePrenumeVarsta - Enter ParticipantDBRepository findOne: Rusu,Dana,12
+05 Apr 2024 13:37:24,105 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:24,105 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:24,105 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Participant WHERE nume = ? and prenume = ? and varsta = ?
+05 Apr 2024 13:37:24,105 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 181 findParticipantNumePrenumeVarsta - findOneParticipant {varsta: 12'nume :Rusu'prenume: Dana'}
+05 Apr 2024 13:37:24,106 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 188 findParticipantNumePrenumeVarsta - Exit with(Participant {varsta: 12'nume :Rusu'prenume: Dana'})
+05 Apr 2024 13:37:24,106 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 194 numarProbePentruParticipant - Enter ParticipantDBRepository numarProbePentruParticipant: 33
+05 Apr 2024 13:37:24,106 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:24,106 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:24,106 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT COUNT(*) FROM Inscriere WHERE id_participant = ?
+05 Apr 2024 13:37:24,106 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 208 numarProbePentruParticipant - Exit with(2)
+05 Apr 2024 13:37:28,051 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 139 findConcursProbaCategorie - Enter ConcursDBRepository findOne: CAUTAREA_UNEI_COMORI, VARSTA_12_15
+05 Apr 2024 13:37:28,051 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:28,051 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:28,051 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Concurs WHERE proba = ? and categorie = ?
+05 Apr 2024 13:37:28,052 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 162 findConcursProbaCategorie - Exit with(Concurs {categorie=VARSTA_12_15, proba=CAUTAREA_UNEI_COMORI})
+05 Apr 2024 13:37:28,052 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 165 findParticipantNumePrenumeVarsta - Enter ParticipantDBRepository findOne: Rusu,Dana,12
+05 Apr 2024 13:37:28,052 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:28,052 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:28,052 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Participant WHERE nume = ? and prenume = ? and varsta = ?
+05 Apr 2024 13:37:28,053 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 181 findParticipantNumePrenumeVarsta - findOneParticipant {varsta: 12'nume :Rusu'prenume: Dana'}
+05 Apr 2024 13:37:28,053 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 188 findParticipantNumePrenumeVarsta - Exit with(Participant {varsta: 12'nume :Rusu'prenume: Dana'})
+05 Apr 2024 13:37:28,053 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 194 numarProbePentruParticipant - Enter ParticipantDBRepository numarProbePentruParticipant: 33
+05 Apr 2024 13:37:28,053 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:28,053 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:28,053 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT COUNT(*) FROM Inscriere WHERE id_participant = ?
+05 Apr 2024 13:37:28,053 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 208 numarProbePentruParticipant - Exit with(2)
+05 Apr 2024 13:37:30,026 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 139 findConcursProbaCategorie - Enter ConcursDBRepository findOne: POEZIE, VARSTA_12_15
+05 Apr 2024 13:37:30,026 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:30,026 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:30,026 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Concurs WHERE proba = ? and categorie = ?
+05 Apr 2024 13:37:30,027 TRACE ro.mpp2024.repository.CDB.ConcursDBRepository 162 findConcursProbaCategorie - Exit with(Concurs {categorie=VARSTA_12_15, proba=POEZIE})
+05 Apr 2024 13:37:30,027 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 165 findParticipantNumePrenumeVarsta - Enter ParticipantDBRepository findOne: Rusu,Dana,12
+05 Apr 2024 13:37:30,027 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:30,027 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:30,027 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT * FROM Participant WHERE nume = ? and prenume = ? and varsta = ?
+05 Apr 2024 13:37:30,027 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 181 findParticipantNumePrenumeVarsta - findOneParticipant {varsta: 12'nume :Rusu'prenume: Dana'}
+05 Apr 2024 13:37:30,027 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 188 findParticipantNumePrenumeVarsta - Exit with(Participant {varsta: 12'nume :Rusu'prenume: Dana'})
+05 Apr 2024 13:37:30,027 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 194 numarProbePentruParticipant - Enter ParticipantDBRepository numarProbePentruParticipant: 33
+05 Apr 2024 13:37:30,028 TRACE ro.mpp2024.repository.JdbcUtils 46 getConnection - Enter getConnection IN
+05 Apr 2024 13:37:30,028 TRACE ro.mpp2024.repository.JdbcUtils 55 getConnection - Exit: getConnection OUT
+05 Apr 2024 13:37:30,028 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [JavaFX Application Thread] [SQLite EXEC] SELECT COUNT(*) FROM Inscriere WHERE id_participant = ?
+05 Apr 2024 13:37:30,028 TRACE ro.mpp2024.repository.CDB.ParticipantDBRepository 208 numarProbePentruParticipant - Exit with(2)

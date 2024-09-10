@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'application'
+}
+
+group = 'client'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version="17"
+    modules = [ 'javafx.controls', 'javafx.fxml'  ]
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    implementation project (':CCModel')
+    implementation project (':CCServices')
+    implementation project (':CCNetworking')
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+    //testImplementation platform('org.junit:junit-bom:5.9.1')
+    //testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+application{
+    mainClass='client.StartClient_RPC'
+    //mainClass='client.StartClient_Proto'
+}
+
+jar{
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes('Main-Class':'client.StartRpcClientFX')
+    }
+    from{
+        configurations.runtimeClasspath.collect{it.isDirectory()?it:zipTree(it)}
+    }
+}
