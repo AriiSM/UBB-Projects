@@ -1,0 +1,1144 @@
+18 Jun 2024 22:43:46,196 TRACE mpp.Repo.RepoPlayer 57 findJucator - Enter
+18 Jun 2024 22:43:46,198 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:43:46,198 TRACE mpp.Utils.UtilsJDBC 23 getNewConnection - Enter
+18 Jun 2024 22:43:46,199 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM
+18 Jun 2024 22:43:46,413 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-0] [SQLite EXEC] pragma busy_timeout=3000
+18 Jun 2024 22:43:46,416 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-0] [SQLite EXEC] SELECT * FROM Persoana WHERE username=?
+18 Jun 2024 22:43:46,419 TRACE mpp.Repo.RepoPlayer 67 findJucator - Exit with(Jucator{id=2, username='Teo'})
+18 Jun 2024 22:43:46,426 TRACE mpp.Repo.RepoPlayer 34 login - Enter
+18 Jun 2024 22:43:46,426 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:43:46,426 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Persoana WHERE username=?
+18 Jun 2024 22:43:46,426 TRACE mpp.Repo.RepoPlayer 44 login - Exit with(Jucator{id=2, username='Teo'})
+18 Jun 2024 22:43:46,504 TRACE mpp.Repo.RepoJucatorGame 42 findAll - Enter
+18 Jun 2024 22:43:46,504 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:43:46,504 TRACE mpp.Utils.UtilsJDBC 23 getNewConnection - Enter
+18 Jun 2024 22:43:46,504 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM
+18 Jun 2024 22:43:46,505 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] pragma busy_timeout=3000
+18 Jun 2024 22:43:46,505 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM JucatorGames
+18 Jun 2024 22:43:46,506 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:43:46,506 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:43:46,507 TRACE mpp.Repo.RepoJucatorGame 67 findAll - Exit with([])
+18 Jun 2024 22:43:46,516 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:43:46,516 TRACE mpp.Utils.UtilsJDBC 23 getNewConnection - Enter
+18 Jun 2024 22:43:46,516 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM
+18 Jun 2024 22:43:46,517 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] pragma busy_timeout=3000
+18 Jun 2024 22:43:46,517 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Cuvant ORDER BY RANDOM() LIMIT 1
+18 Jun 2024 22:44:04,112 TRACE mpp.RepoORM.RepoConfigurareHibernate 51 save - Enter
+18 Jun 2024 22:44:04,126 DEBUG org.jboss.logging.LoggerProviders 152 logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+18 Jun 2024 22:44:04,130 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl 51 addIntegrator - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+18 Jun 2024 22:44:04,131 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl 51 addIntegrator - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+18 Jun 2024 22:44:04,139 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+18 Jun 2024 22:44:04,140 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+18 Jun 2024 22:44:04,140 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+18 Jun 2024 22:44:04,140 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+18 Jun 2024 22:44:04,140 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+18 Jun 2024 22:44:04,140 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [cte] -> [org.hibernate.query.sqm.mutation.internal.cte.CteInsertStrategy]
+18 Jun 2024 22:44:04,141 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [global_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.GlobalTemporaryTableInsertStrategy]
+18 Jun 2024 22:44:04,141 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [local_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.LocalTemporaryTableInsertStrategy]
+18 Jun 2024 22:44:04,141 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableInsertStrategy] : [persistent] -> [org.hibernate.query.sqm.mutation.internal.temptable.PersistentTableInsertStrategy]
+18 Jun 2024 22:44:04,142 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [cte] -> [org.hibernate.query.sqm.mutation.internal.cte.CteMutationStrategy]
+18 Jun 2024 22:44:04,142 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [global_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.GlobalTemporaryTableMutationStrategy]
+18 Jun 2024 22:44:04,142 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [local_temporary] -> [org.hibernate.query.sqm.mutation.internal.temptable.LocalTemporaryTableMutationStrategy]
+18 Jun 2024 22:44:04,142 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.query.sqm.mutation.spi.SqmMultiTableMutationStrategy] : [persistent] -> [org.hibernate.query.sqm.mutation.internal.temptable.PersistentTableMutationStrategy]
+18 Jun 2024 22:44:04,143 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+18 Jun 2024 22:44:04,143 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+18 Jun 2024 22:44:04,143 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+18 Jun 2024 22:44:04,143 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+18 Jun 2024 22:44:04,144 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+18 Jun 2024 22:44:04,144 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [standard] -> [org.hibernate.id.enhanced.StandardNamingStrategy]
+18 Jun 2024 22:44:04,145 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [single] -> [org.hibernate.id.enhanced.SingleNamingStrategy]
+18 Jun 2024 22:44:04,145 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.id.enhanced.ImplicitDatabaseObjectNamingStrategy] : [legacy] -> [org.hibernate.id.enhanced.LegacyNamingStrategy]
+18 Jun 2024 22:44:04,146 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [default] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyStandard]
+18 Jun 2024 22:44:04,146 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.boot.model.relational.ColumnOrderingStrategy] : [legacy] -> [org.hibernate.boot.model.relational.ColumnOrderingStrategyLegacy]
+18 Jun 2024 22:44:04,147 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+18 Jun 2024 22:44:04,147 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+18 Jun 2024 22:44:04,147 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson] -> [org.hibernate.type.format.jackson.JacksonJsonFormatMapper]
+18 Jun 2024 22:44:04,147 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jsonb] -> [org.hibernate.type.format.jakartajson.JsonBJsonFormatMapper]
+18 Jun 2024 22:44:04,148 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jackson-xml] -> [org.hibernate.type.format.jackson.JacksonXmlFormatMapper]
+18 Jun 2024 22:44:04,148 TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl 83 registerStrategyImplementor - Registering named strategy selector [org.hibernate.type.format.FormatMapper] : [jaxb] -> [org.hibernate.type.format.jaxb.JaxbXmlFormatMapper]
+18 Jun 2024 22:44:04,168 INFO  org.hibernate.Version 44 logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+18 Jun 2024 22:44:04,168 INFO  org.hibernate.cfg.Environment 148 <clinit> - HHH000205: Loaded properties from resource hibernate.properties: {jakarta.persistence.jdbc.url=jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM, hibernate.format_sql=true, hibernate.show_sql=true, jakarta.persistence.schema-generation.database.action=update, hibernate.highlight_sql=true}
+18 Jun 2024 22:44:04,180 DEBUG org.hibernate.cfg.Configuration 956 buildSessionFactory - Building session factory using internal StandardServiceRegistryBuilder
+18 Jun 2024 22:44:04,184 DEBUG org.hibernate.cfg.Configuration 858 buildSessionFactory - Building session factory using provided StandardServiceRegistry
+18 Jun 2024 22:44:04,188 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.id.factory.IdentifierGeneratorFactory]
+18 Jun 2024 22:44:04,189 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+18 Jun 2024 22:44:04,193 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 94 getBeanContainer - Ignoring CDI for resolving IdentifierGenerator instances as extended or delayed CDI support was enabled
+18 Jun 2024 22:44:04,195 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+18 Jun 2024 22:44:04,196 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+18 Jun 2024 22:44:04,197 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+18 Jun 2024 22:44:04,197 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+18 Jun 2024 22:44:04,197 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+18 Jun 2024 22:44:04,198 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+18 Jun 2024 22:44:04,198 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+18 Jun 2024 22:44:04,199 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+18 Jun 2024 22:44:04,200 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+18 Jun 2024 22:44:04,200 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+18 Jun 2024 22:44:04,200 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+18 Jun 2024 22:44:04,201 DEBUG org.hibernate.id.factory.internal.StandardIdentifierGeneratorFactory 170 register - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+18 Jun 2024 22:44:04,208 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+18 Jun 2024 22:44:04,208 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+18 Jun 2024 22:44:04,209 DEBUG org.hibernate.cache.internal.RegionFactoryInitiator 122 resolveRegionFactory - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+18 Jun 2024 22:44:04,210 INFO  org.hibernate.cache.internal.RegionFactoryInitiator 50 initiateService - HHH000026: Second-level cache disabled
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@22ae93ff
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@22ae93ff
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@22ae93ff
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@36b4525
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@36b4525
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@69e448c4
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@69e448c4
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@7616e0be
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@7616e0be
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration byte -> org.hibernate.type.BasicTypeReference@20f1a4e8
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration byte -> org.hibernate.type.BasicTypeReference@20f1a4e8
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@20f1a4e8
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration binary -> org.hibernate.type.BasicTypeReference@79ea8fbe
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@79ea8fbe
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration [B -> org.hibernate.type.BasicTypeReference@79ea8fbe
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@32034a2f
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@32034a2f
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration image -> org.hibernate.type.BasicTypeReference@73514fc1
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration blob -> org.hibernate.type.BasicTypeReference@5e2a73a7
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@5e2a73a7
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@739080a3
+18 Jun 2024 22:44:04,258 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@5beafecc
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration short -> org.hibernate.type.BasicTypeReference@223c8d37
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration short -> org.hibernate.type.BasicTypeReference@223c8d37
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@223c8d37
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration integer -> org.hibernate.type.BasicTypeReference@2f06759c
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration int -> org.hibernate.type.BasicTypeReference@2f06759c
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@2f06759c
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration long -> org.hibernate.type.BasicTypeReference@58e46d47
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration long -> org.hibernate.type.BasicTypeReference@58e46d47
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@58e46d47
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration float -> org.hibernate.type.BasicTypeReference@5474f409
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration float -> org.hibernate.type.BasicTypeReference@5474f409
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@5474f409
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration double -> org.hibernate.type.BasicTypeReference@12e79e85
+18 Jun 2024 22:44:04,260 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration double -> org.hibernate.type.BasicTypeReference@12e79e85
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@12e79e85
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@ed1b3d0
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@ed1b3d0
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@75a46918
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@75a46918
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration character -> org.hibernate.type.BasicTypeReference@6831f19
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration char -> org.hibernate.type.BasicTypeReference@6831f19
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@6831f19
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@283ebafa
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration string -> org.hibernate.type.BasicTypeReference@2bf2d31e
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@2bf2d31e
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@7dc893d1
+18 Jun 2024 22:44:04,261 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration characters -> org.hibernate.type.BasicTypeReference@63ad20a6
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@63ad20a6
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration [C -> org.hibernate.type.BasicTypeReference@63ad20a6
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@3e19bf43
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration text -> org.hibernate.type.BasicTypeReference@3cee1bd
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@3a21ac0e
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration clob -> org.hibernate.type.BasicTypeReference@300303fc
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@300303fc
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@43934118
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@43934118
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@372483de
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@d218e8
+18 Jun 2024 22:44:04,262 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@28e6f7ed
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@71a4f868
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@628dbff1
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@7288fe10
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@6d4e3633
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@6d4e3633
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@3b7ff44a
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@3b7ff44a
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@3402a6e3
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@3402a6e3
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@14fb60d
+18 Jun 2024 22:44:04,263 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@14fb60d
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@1d2cf7b9
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@1d2cf7b9
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@59b58df2
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@78210d99
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@422334e
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@422334e
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@7ec99d4c
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@be6557a
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7b5bcc5a
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@6ef6383c
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@6ef6383c
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@5ce7eb53
+18 Jun 2024 22:44:04,264 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@65132830
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration date -> org.hibernate.type.BasicTypeReference@408f11d4
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@408f11d4
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration time -> org.hibernate.type.BasicTypeReference@1f67f621
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@1f67f621
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@7cb92bed
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@7cb92bed
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@7cb92bed
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@97cee2
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@97cee2
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@97cee2
+18 Jun 2024 22:44:04,265 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@38ae6e95
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@18d8515f
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration instant -> org.hibernate.type.BasicTypeReference@2d0bf7ea
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@2d0bf7ea
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@13d5cc77
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@13d5cc77
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@13d5cc77
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@58c4d25e
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@24c32b0
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration class -> org.hibernate.type.BasicTypeReference@708a21b4
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@708a21b4
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration currency -> org.hibernate.type.BasicTypeReference@4d81eda6
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@4d81eda6
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@4d81eda6
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration locale -> org.hibernate.type.BasicTypeReference@3329806a
+18 Jun 2024 22:44:04,266 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@3329806a
+18 Jun 2024 22:44:04,267 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@5093ed0d
+18 Jun 2024 22:44:04,267 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@5093ed0d
+18 Jun 2024 22:44:04,267 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@7135e12a
+18 Jun 2024 22:44:04,267 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@7135e12a
+18 Jun 2024 22:44:04,267 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@331bde77
+18 Jun 2024 22:44:04,267 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@331bde77
+18 Jun 2024 22:44:04,268 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration url -> org.hibernate.type.BasicTypeReference@4c4e32ae
+18 Jun 2024 22:44:04,268 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@4c4e32ae
+18 Jun 2024 22:44:04,268 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration vector -> org.hibernate.type.BasicTypeReference@37a55af
+18 Jun 2024 22:44:04,268 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@5d98d85b
+18 Jun 2024 22:44:04,270 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration object -> org.hibernate.type.JavaObjectType@293c0d3e
+18 Jun 2024 22:44:04,270 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@293c0d3e
+18 Jun 2024 22:44:04,271 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration null -> org.hibernate.type.NullType@79f91ac9
+18 Jun 2024 22:44:04,271 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@73ceaefe
+18 Jun 2024 22:44:04,271 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@5f49e2e1
+18 Jun 2024 22:44:04,271 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@62d39033
+18 Jun 2024 22:44:04,271 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@53cde1f2
+18 Jun 2024 22:44:04,272 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@55f20c2b
+18 Jun 2024 22:44:04,272 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@453ca29e
+18 Jun 2024 22:44:04,272 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@3b90f002
+18 Jun 2024 22:44:04,272 DEBUG org.hibernate.type.BasicTypeRegistry 396 applyRegistrationKeys - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@76e54f3
+18 Jun 2024 22:44:04,273 TRACE org.hibernate.query.sqm.function.SqmFunctionRegistry 43 <init> - SqmFunctionRegistry created
+18 Jun 2024 22:44:04,273 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+18 Jun 2024 22:44:04,287 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+18 Jun 2024 22:44:04,287 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+18 Jun 2024 22:44:04,288 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+18 Jun 2024 22:44:04,293 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+18 Jun 2024 22:44:04,293 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+18 Jun 2024 22:44:04,293 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+18 Jun 2024 22:44:04,295 WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl 81 configure - HHH10001002: Using built-in connection pool (not intended for production use)
+18 Jun 2024 22:44:04,303 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl 140 buildCreator - HHH10001010: No JDBC driver class specified by hibernate.connection.driver_class
+18 Jun 2024 22:44:04,303 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl 149 buildCreator - HHH10001011: Loaded JDBC drivers: org.sqlite.JDBC
+18 Jun 2024 22:44:04,303 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl 158 buildCreator - HHH10001012: Connecting with JDBC URL [jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM]
+18 Jun 2024 22:44:04,303 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl 164 buildCreator - HHH10001001: Connection properties: {}
+18 Jun 2024 22:44:04,303 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl 171 buildCreator - HHH10001003: Autocommit mode: false
+18 Jun 2024 22:44:04,305 DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections 363 <init> - Initializing Connection pool with 1 Connections
+18 Jun 2024 22:44:04,306 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections 371 <init> - HHH10001115: Connection pool size: 20 (min=1)
+18 Jun 2024 22:44:04,306 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] pragma busy_timeout=3000
+18 Jun 2024 22:44:04,307 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:04,310 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+18 Jun 2024 22:44:04,319 DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator 353 logDatabaseAndDriver - Database ->
+       name : SQLite
+    version : 3.45.1
+      major : 3
+      minor : 45
+18 Jun 2024 22:44:04,319 DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator 364 logDatabaseAndDriver - Driver ->
+       name : SQLite JDBC
+    version : 3.45.1.0
+      major : 3
+      minor : 45
+18 Jun 2024 22:44:04,319 DEBUG org.jboss.logging.DelegatingBasicLogger 389 debugf - JDBC version : 4.2
+18 Jun 2024 22:44:04,338 DEBUG org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl 94 logSelectedDialect - HHH035001: Using dialect: org.hibernate.community.dialect.SQLiteDialect, version: 3.45
+18 Jun 2024 22:44:04,344 DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder 116 applyIdentifierCasing - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+18 Jun 2024 22:44:04,344 DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder 210 build - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+18 Jun 2024 22:44:04,350 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [null]
+18 Jun 2024 22:44:04,350 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [null]
+18 Jun 2024 22:44:04,353 DEBUG org.hibernate.engine.jdbc.env.internal.LobCreationHelper 96 canCreateClob - HHH10010005: Disabling contextual LOB creation as createClob() method threw error : java.sql.SQLFeatureNotSupportedException
+18 Jun 2024 22:44:04,354 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:04,354 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:04,354 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:04,354 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+18 Jun 2024 22:44:04,354 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.spi.SqlStatementLogger]
+18 Jun 2024 22:44:04,355 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.sql.ast.spi.ParameterMarkerStrategy]
+18 Jun 2024 22:44:04,361 DEBUG org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry 82 addDescriptor - addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+18 Jun 2024 22:44:04,363 DEBUG org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry 82 addDescriptor - addDescriptor(2004, BlobTypeDescriptor(PRIMITIVE_ARRAY_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+18 Jun 2024 22:44:04,363 DEBUG org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry 82 addDescriptor - addDescriptor(2005, ClobTypeDescriptor(STRING_BINDING)) replaced previous registration(ClobTypeDescriptor(STREAM_BINDING))
+18 Jun 2024 22:44:04,367 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+18 Jun 2024 22:44:04,367 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+18 Jun 2024 22:44:04,367 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+18 Jun 2024 22:44:04,370 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+18 Jun 2024 22:44:04,370 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+18 Jun 2024 22:44:04,370 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+18 Jun 2024 22:44:04,371 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+18 Jun 2024 22:44:04,371 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+18 Jun 2024 22:44:04,371 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+18 Jun 2024 22:44:04,372 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+18 Jun 2024 22:44:04,372 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+18 Jun 2024 22:44:04,372 DEBUG org.hibernate.type.BasicTypeRegistry 371 applyRegistrationKeys - Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+18 Jun 2024 22:44:04,373 DEBUG org.hibernate.type.spi.TypeConfiguration 194 scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6a5d228e] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@b74ad84]
+18 Jun 2024 22:44:04,396 DEBUG org.hibernate.boot.model.relational.Namespace 64 <init> - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+18 Jun 2024 22:44:04,406 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+18 Jun 2024 22:44:04,412 DEBUG org.hibernate.boot.model.internal.EntityBinder 214 bindEntityClass - Binding entity from annotated class: mpp.Configurare
+18 Jun 2024 22:44:04,416 DEBUG org.hibernate.boot.model.internal.EntityBinder 1308 registerImportName - Import with entity name Configurare
+18 Jun 2024 22:44:04,416 TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl 874 addImport - Import: Configurare -> mpp.Configurare
+18 Jun 2024 22:44:04,416 TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl 874 addImport - Import: mpp.Configurare -> mpp.Configurare
+18 Jun 2024 22:44:04,417 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [Configurare]
+18 Jun 2024 22:44:04,418 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [Configurare]
+18 Jun 2024 22:44:04,421 DEBUG org.hibernate.boot.model.internal.EntityBinder 1857 bindTable - Bind entity mpp.Configurare on table Configurare
+18 Jun 2024 22:44:04,426 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [DTYPE]
+18 Jun 2024 22:44:04,426 DEBUG org.hibernate.boot.model.internal.AnnotatedColumn 261 bind - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+18 Jun 2024 22:44:04,433 TRACE org.hibernate.boot.model.internal.PropertyBinder 696 processElementAnnotations - Processing annotations of mpp.Configurare.id
+18 Jun 2024 22:44:04,434 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [id]
+18 Jun 2024 22:44:04,435 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [id]
+18 Jun 2024 22:44:04,435 DEBUG org.hibernate.boot.model.internal.AnnotatedColumn 261 bind - Binding column: AnnotatedColumn(column='id')
+18 Jun 2024 22:44:04,435 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl 60 classForName - Not known whether passed class name [mpp.Configurare] is safe
+18 Jun 2024 22:44:04,435 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl 62 classForName - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mpp.Configurare
+18 Jun 2024 22:44:04,438 DEBUG org.hibernate.boot.model.internal.PropertyBinder 252 makePropertyAndValue - MetadataSourceProcessor property id with lazy=false
+18 Jun 2024 22:44:04,440 DEBUG org.hibernate.boot.model.internal.AbstractPropertyHolder 107 resolveAttributeConverterDescriptor - Attempting to locate auto-apply AttributeConverter for property [mpp.Configurare:id]
+18 Jun 2024 22:44:04,443 DEBUG org.hibernate.boot.model.internal.BasicValueBinder 1212 make - building BasicValue for id
+18 Jun 2024 22:44:04,445 DEBUG org.hibernate.mapping.BasicValue 294 checkSelectable - Skipping column re-registration: Configurare.id
+18 Jun 2024 22:44:04,445 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [id]
+18 Jun 2024 22:44:04,445 DEBUG org.hibernate.boot.model.internal.PropertyBinder 392 makeProperty - Building property id
+18 Jun 2024 22:44:04,446 TRACE org.hibernate.boot.model.internal.PropertyBinder 408 makeProperty - Cascading id with null
+18 Jun 2024 22:44:04,447 DEBUG org.hibernate.boot.model.internal.GeneratorBinder 75 makeIdGenerator - #makeIdGenerator(BasicValue([Column(id)]), id, identity, , ...)
+18 Jun 2024 22:44:04,448 TRACE org.hibernate.boot.model.internal.PropertyBinder 1328 processId - Bind @Id on id
+18 Jun 2024 22:44:04,448 TRACE org.hibernate.boot.model.internal.PropertyBinder 696 processElementAnnotations - Processing annotations of mpp.Configurare.cuvant
+18 Jun 2024 22:44:04,448 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [cuvant]
+18 Jun 2024 22:44:04,448 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [cuvant]
+18 Jun 2024 22:44:04,448 DEBUG org.hibernate.boot.model.internal.AnnotatedColumn 261 bind - Binding column: AnnotatedColumn(column='cuvant')
+18 Jun 2024 22:44:04,449 DEBUG org.hibernate.boot.model.internal.PropertyBinder 252 makePropertyAndValue - MetadataSourceProcessor property cuvant with lazy=false
+18 Jun 2024 22:44:04,449 DEBUG org.hibernate.boot.model.internal.AbstractPropertyHolder 107 resolveAttributeConverterDescriptor - Attempting to locate auto-apply AttributeConverter for property [mpp.Configurare:cuvant]
+18 Jun 2024 22:44:04,449 DEBUG org.hibernate.boot.model.internal.BasicValueBinder 1212 make - building BasicValue for cuvant
+18 Jun 2024 22:44:04,449 DEBUG org.hibernate.mapping.BasicValue 294 checkSelectable - Skipping column re-registration: Configurare.cuvant
+18 Jun 2024 22:44:04,449 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [cuvant]
+18 Jun 2024 22:44:04,449 DEBUG org.hibernate.boot.model.internal.PropertyBinder 392 makeProperty - Building property cuvant
+18 Jun 2024 22:44:04,449 TRACE org.hibernate.boot.model.internal.PropertyBinder 408 makeProperty - Cascading cuvant with null
+18 Jun 2024 22:44:04,449 TRACE org.hibernate.boot.model.internal.PropertyBinder 696 processElementAnnotations - Processing annotations of mpp.Configurare.masca
+18 Jun 2024 22:44:04,449 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [masca]
+18 Jun 2024 22:44:04,449 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [masca]
+18 Jun 2024 22:44:04,449 DEBUG org.hibernate.boot.model.internal.AnnotatedColumn 261 bind - Binding column: AnnotatedColumn(column='masca')
+18 Jun 2024 22:44:04,451 DEBUG org.hibernate.boot.model.internal.PropertyBinder 252 makePropertyAndValue - MetadataSourceProcessor property masca with lazy=false
+18 Jun 2024 22:44:04,451 DEBUG org.hibernate.boot.model.internal.AbstractPropertyHolder 107 resolveAttributeConverterDescriptor - Attempting to locate auto-apply AttributeConverter for property [mpp.Configurare:masca]
+18 Jun 2024 22:44:04,451 DEBUG org.hibernate.boot.model.internal.BasicValueBinder 1212 make - building BasicValue for masca
+18 Jun 2024 22:44:04,451 DEBUG org.hibernate.mapping.BasicValue 294 checkSelectable - Skipping column re-registration: Configurare.masca
+18 Jun 2024 22:44:04,451 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 62 normalizeQuoting - Normalizing identifier quoting [masca]
+18 Jun 2024 22:44:04,451 DEBUG org.hibernate.boot.model.internal.PropertyBinder 392 makeProperty - Building property masca
+18 Jun 2024 22:44:04,451 TRACE org.hibernate.boot.model.internal.PropertyBinder 408 makeProperty - Cascading masca with null
+18 Jun 2024 22:44:04,451 DEBUG org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl 261 packageForNameOrNull - HHH000194: Package not found or wo package-info.java: mpp
+18 Jun 2024 22:44:04,454 DEBUG org.hibernate.boot.model.internal.BasicValueBinder 1290 fillSimpleValue - Starting `BasicValueBinder#fillSimpleValue` for id
+18 Jun 2024 22:44:04,455 DEBUG org.hibernate.boot.model.internal.BasicValueBinder 1290 fillSimpleValue - Starting `BasicValueBinder#fillSimpleValue` for cuvant
+18 Jun 2024 22:44:04,455 DEBUG org.hibernate.boot.model.internal.BasicValueBinder 1290 fillSimpleValue - Starting `BasicValueBinder#fillSimpleValue` for masca
+18 Jun 2024 22:44:04,456 DEBUG org.hibernate.mapping.PrimaryKey 41 addColumn - Forcing column [id] to be non-null as it is part of the primary key for table [configurare]
+18 Jun 2024 22:44:04,469 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.boot.spi.SessionFactoryBuilderService]
+18 Jun 2024 22:44:04,472 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+18 Jun 2024 22:44:04,473 TRACE org.hibernate.loader.BatchFetchStyle 57 interpret - Interpreting BatchFetchStyle from setting : null
+18 Jun 2024 22:44:04,474 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.bytecode.spi.BytecodeProvider]
+18 Jun 2024 22:44:04,578 DEBUG org.hibernate.internal.SessionFactoryImpl 218 <init> - Building session factory
+18 Jun 2024 22:44:04,578 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+18 Jun 2024 22:44:04,604 DEBUG org.hibernate.service.internal.SessionFactoryServiceRegistryImpl 105 getService - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+18 Jun 2024 22:44:04,604 DEBUG org.hibernate.internal.SessionFactoryImpl 236 <init> - Instantiating SessionFactory with settings: {hibernate.format_sql=true, java.specification.version=17, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=D:\FACULTATE\SEM4\MPP\PracticeForExam\Vocale\VocaleConsoaneGame\Server\build\classes\java\main;D:\FACULTATE\SEM4\MPP\PracticeForExam\Vocale\VocaleConsoaneGame\Server\build\resources\main;D:\FACULTATE\SEM4\MPP\PracticeForExam\Vocale\VocaleConsoaneGame\Persistance\build\libs\Persistance-1.0-SNAPSHOT.jar;D:\FACULTATE\SEM4\MPP\PracticeForExam\Vocale\VocaleConsoaneGame\Networking\build\libs\Networking-1.0-SNAPSHOT.jar;D:\FACULTATE\SEM4\MPP\PracticeForExam\Vocale\VocaleConsoaneGame\Service\build\libs\Service-1.0-SNAPSHOT.jar;D:\FACULTATE\SEM4\MPP\PracticeForExam\Vocale\VocaleConsoaneGame\Domain\build\libs\Domain-1.0-SNAPSHOT.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-slf4j-impl\2.17.1\84692d456bcce689355d33d68167875e486954dd\log4j-slf4j-impl-2.17.1.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.17.1\779f60f3844dadc3ef597976fcb1e5127b1f343d\log4j-core-2.17.1.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.17.1\d771af8e336e372fb5399c99edabe0919aeaf5b2\log4j-api-2.17.1.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.hibernate.orm\hibernate-community-dialects\6.4.4.Final\29ba003a437a39be9ee4e3b41bac0f53fc02a55\hibernate-community-dialects-6.4.4.Final.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.hibernate.orm\hibernate-core\6.4.4.Final\5c9decb3c5a70bf7801d41fc32633416c26be069\hibernate-core-6.4.4.Final.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\jakarta.persistence\jakarta.persistence-api\3.1.0\66901fa1c373c6aff65c13791cc11da72060a8d6\jakarta.persistence-api-3.1.0.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.xerial\sqlite-jdbc\3.45.1.0\7cd66c2793e4d9511f6da8fc6c621575171c2da1\sqlite-jdbc-3.45.1.0.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.hibernate.validator\hibernate-validator\8.0.0.Final\8e0389f22a3a246915a3311877da4168256b95d2\hibernate-validator-8.0.0.Final.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.glassfish\jakarta.el\4.0.2\d67e18e7b3500dc91fe941ed3a1807074eaac750\jakarta.el-4.0.2.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\5.3.15\80a12b7dcb3332fbd65c3649249fd35561ffc561\spring-context-5.3.15.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\5.3.15\195966e1f4260f89696e668856ebfd9a1bc76404\spring-aop-5.3.15.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\5.3.15\a88e2ccfe8b131bcff2e643b90d52f6d928e7369\spring-beans-5.3.15.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.36\6c62681a2f655b49963a5983b8b0950a6120ae14\slf4j-api-1.7.36.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\jakarta.transaction\jakarta.transaction-api\2.0.1\51a520e3fae406abb84e2e1148e6746ce3f80a1a\jakarta.transaction-api-2.0.1.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.5.0.Final\c19307cc11f28f5e2679347e633a3294d865334d\jboss-logging-3.5.0.Final.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\6.0.6.Final\77a5f94b56d49508e0ee334751db5b78e5ccd50c\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\io.smallrye\jandex\3.1.2\a6c1c89925c7df06242b03dddb353116ceb9584c\jandex-3.1.2.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.5.1\3fe0bed568c62df5e89f4f174c101eab25345b6c\classmate-1.5.1.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.11\725602eb7c8c56b51b9c21f273f9df5c909d9e7d\byte-buddy-1.14.11.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\4.0.2\e4e4e0c5b0d42054d00dc4023901572a60d368c7\jaxb-runtime-4.0.2.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-core\4.0.2\8c29249f6c10f4ee08967783831580b0f5c5360\jaxb-core-4.0.2.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\jakarta.xml.bind\jakarta.xml.bind-api\4.0.0\bbb399208d288b15ec101fa4fcfc4bd77cedc97a\jakarta.xml.bind-api-4.0.0.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\jakarta.inject\jakarta.inject-api\2.0.1\4c28afe1991a941d7702fe1362c365f0a8641d1e\jakarta.inject-api-2.0.1.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.13.0\5a02e48521624faaf5ff4d99afc88b01686af655\antlr4-runtime-4.13.0.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\jakarta.validation\jakarta.validation-api\3.0.2\92b6631659ba35ca09e44874d3eb936edfeee532\jakarta.validation-api-3.0.2.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\jakarta.el\jakarta.el-api\4.0.0\ba9834bd2dba5014072bacbafecffaec1673b0f9\jakarta.el-api-4.0.0.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\5.3.15\362f36bbc4c4b46cc2e4f219df22d08945000c2\spring-expression-5.3.15.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\5.3.15\e813c2311465672d3089fc7be8dbbadb04e64d6b\spring-core-5.3.15.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.eclipse.angus\angus-activation\2.0.0\72369f4e2314d38de2dcbb277141ef0226f73151\angus-activation-2.0.0.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\jakarta.activation\jakarta.activation-api\2.1.1\88c774ab863a21fb2fc4219af95379fafe499a31\jakarta.activation-api-2.1.1.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.3.15\88da960b4fcbd28621aea8b9911976adc06afce4\spring-jcl-5.3.15.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\4.0.2\24e167be69c29ebb7ee0a3b1f9b546f1dfd111fc\txw2-4.0.2.jar;C:\Users\ariis\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\4.1.1\9b3769c76235bc283b060da4fae2318c6d53f07e\istack-commons-runtime-4.1.1.jar, hibernate.highlight_sql=true, java.vm.vendor=Amazon.com Inc., sun.arch.data.model=64, user.variant=, java.vendor.url=https://aws.amazon.com/corretto/, user.timezone=Europe/Bucharest, java.vm.specification.version=17, os.name=Windows 11, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Users\ariis\.jdks\corretto-17.0.9\bin, sun.java.command=mpp.StartServer, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\ariis, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2023-10-17, java.home=C:\Users\ariis\.jdks\corretto-17.0.9, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, jakarta.persistence.schema-generation.database.action=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.9+8-LTS, user.name=ariis, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM, file.encoding=windows-1252, hibernate.show_sql=true, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Corretto-17.0.9.8.1, java.vendor.url.bug=https://github.com/corretto/corretto-17/issues/, java.io.tmpdir=C:\Users\ariis\AppData\Local\Temp\, java.version=17.0.9, user.dir=D:\FACULTATE\SEM4\MPP\PracticeForExam\Vocale\VocaleConsoaneGame\Server, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, jakarta.persistence.jdbc.url=jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@797dd1fa, native.encoding=Cp1252, java.library.path=C:\Users\ariis\.jdks\corretto-17.0.9\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\MinGW\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Users\ariis\protoc-26.1-win64\bin;D:\FACULTATE\SEM4\MPP\NodeJS\;C:\Users\ariis\AppData\Local\Programs\Python\Launcher\;C:\Users\ariis\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.3\bin;;C:\Program Files\Azure Data Studio\bin;D:\MAP_Java_dw\JetBrains Rider 2023.3\bin;;C:\Program Files\JetBrains\PyCharm 2023.3.4\bin;;C:\Users\ariis\AppData\Local\GitHubDesktop\bin;C:\Users\ariis\AppData\Roaming\npm;., java.vendor=Amazon.com Inc., java.vm.info=mixed mode, sharing, java.vm.version=17.0.9+8-LTS, sun.io.unicode.encoding=UnicodeLittle, java.class.version=61.0}
+18 Jun 2024 22:44:04,606 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+18 Jun 2024 22:44:04,608 DEBUG org.hibernate.internal.SessionFactoryImpl 250 <init> - Session factory constructed with filter configurations : {}
+18 Jun 2024 22:44:04,620 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 8.0.0.Final
+18 Jun 2024 22:44:04,623 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser 122 getValidationXmlInputStream - Trying to load META-INF/validation.xml for XML based Validator configuration.
+18 Jun 2024 22:44:04,624 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper 61 getResettableInputStreamForPath - Trying to load META-INF/validation.xml via TCCL
+18 Jun 2024 22:44:04,625 DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper 67 getResettableInputStreamForPath - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+18 Jun 2024 22:44:04,625 DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser 129 getValidationXmlInputStream - No META-INF/validation.xml found. Using annotation based configuration only.
+18 Jun 2024 22:44:04,627 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers 94 getDefault - Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+18 Jun 2024 22:44:04,628 DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers 104 getDefault - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+18 Jun 2024 22:44:04,640 DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator 175 buildExpressionFactory - Loaded expression factory via original TCCL
+18 Jun 2024 22:44:04,681 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper 346 determinePropertyNodeNameProvider - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+18 Jun 2024 22:44:04,683 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper 438 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+18 Jun 2024 22:44:04,683 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper 439 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+18 Jun 2024 22:44:04,683 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper 440 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+18 Jun 2024 22:44:04,683 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper 441 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+18 Jun 2024 22:44:04,683 DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper 442 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+18 Jun 2024 22:44:04,684 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl 60 classForName - Not known whether passed class name [mpp.Configurare] is safe
+18 Jun 2024 22:44:04,684 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl 62 classForName - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mpp.Configurare
+18 Jun 2024 22:44:04,717 DEBUG org.hibernate.service.internal.SessionFactoryServiceRegistryImpl 105 getService - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+18 Jun 2024 22:44:04,738 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+18 Jun 2024 22:44:04,738 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+18 Jun 2024 22:44:04,738 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+18 Jun 2024 22:44:04,739 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+18 Jun 2024 22:44:04,740 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@3e0f65b2] under count; prior registration was null
+18 Jun 2024 22:44:04,740 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@6216b17e] under every; prior registration was null
+18 Jun 2024 22:44:04,740 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@7264eab1] under any; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+18 Jun 2024 22:44:04,741 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+18 Jun 2024 22:44:04,742 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@1e33951a] under sinh; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@131a625b] under cosh; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@938ba88] under tanh; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3bd062b0] under pi; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@39c9bb95] under log; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+18 Jun 2024 22:44:04,743 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+18 Jun 2024 22:44:04,744 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+18 Jun 2024 22:44:04,744 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+18 Jun 2024 22:44:04,744 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+18 Jun 2024 22:44:04,744 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+18 Jun 2024 22:44:04,744 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : length -> character_length
+18 Jun 2024 22:44:04,746 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@573a2ce7] under position; prior registration was null
+18 Jun 2024 22:44:04,747 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@46d672d5] under overlay; prior registration was null
+18 Jun 2024 22:44:04,748 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@6c567266] under trim; prior registration was null
+18 Jun 2024 22:44:04,748 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@3d4dfe51] under cast; prior registration was null
+18 Jun 2024 22:44:04,748 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7397edec] under collate; prior registration was null
+18 Jun 2024 22:44:04,749 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@659dee51] under extract; prior registration was null
+18 Jun 2024 22:44:04,749 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+18 Jun 2024 22:44:04,749 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+18 Jun 2024 22:44:04,750 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@1bac8d68] under ifnull; prior registration was null
+18 Jun 2024 22:44:04,750 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+18 Jun 2024 22:44:04,750 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+18 Jun 2024 22:44:04,750 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@18127c3b] under pad; prior registration was null
+18 Jun 2024 22:44:04,750 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@7b8d519c] under str; prior registration was null
+18 Jun 2024 22:44:04,751 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@6d988088] under format; prior registration was null
+18 Jun 2024 22:44:04,751 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@47f185b7] under timestampadd; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@6ba41f7a] under timestampdiff; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : dateadd -> timestampadd
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : datediff -> timestampdiff
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@542b8f5] under current_date; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@17c11c15] under current_time; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@4b3f77a9] under current_timestamp; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : current date -> current_date
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : current time -> current_time
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : current timestamp -> current_timestamp
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@349ad525] under local_date; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@248f5653] under local_time; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@3b31c763] under local_datetime; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@b836d93] under offset_datetime; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : local date -> local_date
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : local time -> local_time
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : local datetime -> local_datetime
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : offset datetime -> offset_datetime
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@69d2b23b] under instant; prior registration was null
+18 Jun 2024 22:44:04,752 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : current_instant -> instant
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@6ecebeee] under sql; prior registration was null
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@53a65a17] under mod; prior registration was NamedSqmFunctionTemplate(mod)
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@25200f9a] under left; prior registration was NamedSqmFunctionTemplate(left)
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3be0d842] under right; prior registration was NamedSqmFunctionTemplate(right)
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@20c2281e] under concat; prior registration was NamedSqmFunctionTemplate(concat)
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(length)] under length; prior registration was null
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : character_length -> length
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under least; prior registration was NamedSqmFunctionTemplate(least)
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under greatest; prior registration was NamedSqmFunctionTemplate(greatest)
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+18 Jun 2024 22:44:04,753 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TruncFunction@15ba5d12] under trunc; prior registration was null
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : truncate -> trunc
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@39c9bb95
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substring; prior registration was NamedSqmFunctionTemplate(substring)
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(char)] under char; prior registration was null
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 307 registerAlternateKey - Registering alternate key : chr -> char
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@49099065] under locate; prior registration was NamedSqmFunctionTemplate(locate)
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@3bd7fba5] under lpad; prior registration was NamedSqmFunctionTemplate(lpad)
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@5cd6a875] under rpad; prior registration was NamedSqmFunctionTemplate(rpad)
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(strftime)] under format; prior registration was org.hibernate.dialect.function.FormatFunction@6d988088
+18 Jun 2024 22:44:04,754 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(row_number)] under row_number; prior registration was null
+18 Jun 2024 22:44:04,755 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lag)] under lag; prior registration was null
+18 Jun 2024 22:44:04,755 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lead)] under lead; prior registration was null
+18 Jun 2024 22:44:04,755 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(first_value)] under first_value; prior registration was null
+18 Jun 2024 22:44:04,755 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_value)] under last_value; prior registration was null
+18 Jun 2024 22:44:04,755 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nth_value)] under nth_value; prior registration was null
+18 Jun 2024 22:44:04,755 DEBUG org.hibernate.query.sqm.function.SqmFunctionRegistry 90 register - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggGroupConcatEmulation@54a1f6ca] under listagg; prior registration was null
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - abs(NUMERIC arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double acos(NUMERIC arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Boolean any(BOOLEAN arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double asin(NUMERIC arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double atan(NUMERIC arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double atan2(NUMERIC arg0, NUMERIC arg1)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - avg(arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - cast(arg as Type)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - ceiling(NUMERIC arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Character char(INTEGER arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Integer character_length(STRING_OR_CLOB arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Character chr(INTEGER arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - coalesce(arg0[, arg1[, ...]])
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String collate(STRING string as COLLATION collation)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String concat(STRING string0[, STRING string1[, ...]])
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double cos(NUMERIC arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double cosh(NUMERIC arg)
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Long count([distinct ]{arg|*})
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Date current date
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Time current time
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Timestamp current timestamp
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Date current_date
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Instant current_instant
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Time current_time
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Timestamp current_timestamp
+18 Jun 2024 22:44:04,756 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - basicType@14(java.lang.Long,-5)|basicType@17(java.lang.Double,8) datediff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double degrees(NUMERIC arg)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Boolean every(BOOLEAN arg)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double exp(NUMERIC arg)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - first_valueANY value
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - floor(NUMERIC arg)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String format(TEMPORAL datetime as STRING pattern)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - ifnull(arg0, arg1)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Instant instant
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - lagANY value[, INTEGER offset[, ANY default]]
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - last_valueANY value
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - leadANY value[, INTEGER offset[, ANY default]]
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String left(STRING string, INTEGER length)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Integer length(STRING_OR_CLOB arg)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String listagg(STRING arg0, STRING arg1)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double ln(NUMERIC arg)
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - LocalDate local date
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - LocalDateTime local datetime
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - LocalTime local time
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - LocalDate local_date
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - LocalDateTime local_datetime
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - LocalTime local_time
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Integer locate(pattern, string[, start])
+18 Jun 2024 22:44:04,757 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double log(NUMERIC arg0[, NUMERIC arg1])
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String lower(STRING string)
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String lpad(string, length[, padding])
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String ltrim(STRING string[, STRING characters])
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - max(COMPARABLE arg)
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - min(COMPARABLE arg)
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Integer mod(INTEGER arg0, INTEGER arg1)
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - nth_valueANY value, INTEGER nth
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - nullif(arg0, arg1)
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - OffsetDateTime offset datetime
+18 Jun 2024 22:44:04,758 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - OffsetDateTime offset_datetime
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String overlay(STRING string placing STRING replacement from INTEGER start[ for INTEGER length])
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double pi
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Integer position(STRING pattern in STRING string)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double power(NUMERIC arg0, NUMERIC arg1)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double radians(NUMERIC arg)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String replace(STRING string, STRING pattern, STRING replacement)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String right(STRING string, INTEGER length)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - round(NUMERIC number[, INTEGER places])
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Long row_number()
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String rpad(string, length[, padding])
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String rtrim(STRING string[, STRING characters])
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Integer sign(NUMERIC arg)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double sin(NUMERIC arg)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double sinh(NUMERIC arg)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Object sql
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double sqrt(NUMERIC arg)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String str(arg)
+18 Jun 2024 22:44:04,759 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String substr(STRING string, INTEGER start[, INTEGER length])
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - sum(arg)
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double tan(NUMERIC arg)
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - Double tanh(NUMERIC arg)
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - basicType@14(java.lang.Long,-5)|basicType@17(java.lang.Double,8) timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - trunc( ... )
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - truncate( ... )
+18 Jun 2024 22:44:04,760 DEBUG org.hibernate.query.internal.QueryEngineImpl 100 lambda$createFunctionRegistry$0 - String upper(STRING string)
+18 Jun 2024 22:44:04,762 DEBUG org.hibernate.query.internal.QueryInterpretationCacheStandardImpl 48 <init> - Starting QueryInterpretationCache(2048)
+18 Jun 2024 22:44:04,764 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+18 Jun 2024 22:44:04,800 DEBUG org.hibernate.service.internal.SessionFactoryServiceRegistryImpl 105 getService - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+18 Jun 2024 22:44:04,800 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.mutation.spi.MutationExecutorService]
+18 Jun 2024 22:44:04,800 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.event.spi.EntityCopyObserverFactory]
+18 Jun 2024 22:44:04,800 DEBUG org.hibernate.event.internal.EntityCopyObserverFactoryInitiator 39 initiateService - Configured EntityCopyObserver strategy: disallow
+18 Jun 2024 22:44:04,801 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.sql.results.jdbc.spi.JdbcValuesMappingProducerProvider]
+18 Jun 2024 22:44:04,805 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.batch.spi.BatchBuilder]
+18 Jun 2024 22:44:04,806 TRACE org.hibernate.engine.jdbc.batch.internal.BatchBuilderImpl 42 <init> - Using standard BatchBuilder (1)
+18 Jun 2024 22:44:04,809 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+18 Jun 2024 22:44:04,809 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+18 Jun 2024 22:44:04,839 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl 60 classForName - Not known whether passed class name [mpp.Configurare] is safe
+18 Jun 2024 22:44:04,839 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl 62 classForName - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mpp.Configurare
+18 Jun 2024 22:44:04,841 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+18 Jun 2024 22:44:04,968 DEBUG org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl 235 getReflectionOptimizer - HHH000513: Unable to create the ReflectionOptimizer for [mpp.Configurare]: private accessor [cuvant]
+18 Jun 2024 22:44:04,983 TRACE org.hibernate.persister.entity.AbstractPropertyMapping 115 logDuplicateRegistration - Skipping duplicate registration of path [cuvant], existing type = [basicType@6(java.lang.String,12)], incoming type = [basicType@6(java.lang.String,12)]
+18 Jun 2024 22:44:04,983 TRACE org.hibernate.persister.entity.AbstractPropertyMapping 115 logDuplicateRegistration - Skipping duplicate registration of path [masca], existing type = [basicType@6(java.lang.String,12)], incoming type = [basicType@6(java.lang.String,12)]
+18 Jun 2024 22:44:04,983 TRACE org.hibernate.persister.entity.AbstractPropertyMapping 115 logDuplicateRegistration - Skipping duplicate registration of path [id], existing type = [basicType@5(java.lang.Integer,4)], incoming type = [basicType@5(java.lang.Integer,4)]
+18 Jun 2024 22:44:04,994 DEBUG org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess 92 executePostInitCallbacks - Starting post-init callbacks
+18 Jun 2024 22:44:04,994 DEBUG org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry 242 process - Starting PostInitCallbackEntry : Entity(mpp.Configurare) `staticFetchableList` generator
+18 Jun 2024 22:44:05,042 DEBUG org.hibernate.sql.ast.spi.SqlAliasBaseImpl 33 generateNewAlias - Created new SQL alias : c1_0
+18 Jun 2024 22:44:05,044 DEBUG org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl 98 registerTableGroup - Registration of TableGroup [StandardTableGroup(mpp.Configurare)] with identifierForTableGroup [mpp.Configurare] for NavigablePath [mpp.Configurare] 
+18 Jun 2024 22:44:05,048 TRACE org.hibernate.loader.ast.internal.LoaderSelectBuilder 786 visitFetches - Starting visitation of FetchParent's Fetchables : mpp.Configurare
+18 Jun 2024 22:44:05,054 DEBUG org.hibernate.sql.results.graph.DomainResultGraphPrinter 67 visitDomainResults - DomainResult Graph:
+ \-EntityResultImpl [mpp.Configurare]
+ |  +-BasicFetch [mpp.Configurare.cuvant]
+ |  \-BasicFetch [mpp.Configurare.masca]
+
+18 Jun 2024 22:44:05,054 TRACE org.hibernate.sql.results.graph.DomainResultGraphPrinter 70 visitDomainResults - Stack trace calling DomainResultGraphPrinter
+java.lang.Exception: null
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.visitDomainResults(DomainResultGraphPrinter.java:70) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:46) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:37) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translateSelect(AbstractSqlAstTranslator.java:858) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translate(AbstractSqlAstTranslator.java:811) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.<init>(SingleIdLoadPlan.java:66) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.createLoadPlan(SingleIdEntityLoaderStandardImpl.java:198) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.lambda$new$0(SingleIdEntityLoaderStandardImpl.java:41) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.<init>(SingleIdEntityLoaderStandardImpl.java:62) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.<init>(SingleIdEntityLoaderStandardImpl.java:38) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.buildSingleIdEntityLoader(AbstractEntityPersister.java:864) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.buildSingleIdEntityLoader(AbstractEntityPersister.java:853) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareLoaders(AbstractEntityPersister.java:3419) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:206) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:364) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:293) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:941) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:960) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at mpp.Utils.UtilsORM.createNewSessionFactory(UtilsORM.java:26) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.Utils.UtilsORM.getSessionFactory(UtilsORM.java:13) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.RepoORM.RepoConfigurareHibernate.save(RepoConfigurareHibernate.java:53) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.RepoORM.RepoConfigurareHibernate.save(RepoConfigurareHibernate.java:25) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.ServiceImplementation.saveConfigurare(ServiceImplementation.java:61) [main/:?]
+	at mpp.ProtocolRPC.ClientWorker.handleSAVE_CONFIGURARE(ClientWorker.java:167) [Networking-1.0-SNAPSHOT.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at mpp.ProtocolRPC.ClientWorker.handleRequest(ClientWorker.java:91) [Networking-1.0-SNAPSHOT.jar:?]
+	at mpp.ProtocolRPC.ClientWorker.run(ClientWorker.java:43) [Networking-1.0-SNAPSHOT.jar:?]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+18 Jun 2024 22:44:05,061 DEBUG org.hibernate.sql.ast.SqlTreePrinter 46 logSqlAst - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (c1 : mpp.Configurare) {
+          primaryTableReference : Configurare as c1_0
+        }
+      }
+    }
+
+18 Jun 2024 22:44:05,069 DEBUG org.hibernate.persister.entity.AbstractEntityPersister 2992 logStaticSQL - Static SQL for entity: mpp.Configurare
+18 Jun 2024 22:44:05,069 DEBUG org.hibernate.persister.entity.AbstractEntityPersister 2997 logStaticSQL -  Version select: select id from Configurare where id=?
+18 Jun 2024 22:44:05,069 DEBUG org.jboss.logging.DelegatingBasicLogger 394 debugf -  Insert (0): insert into Configurare (cuvant,masca) values (?,?)
+18 Jun 2024 22:44:05,069 DEBUG org.jboss.logging.DelegatingBasicLogger 394 debugf -  Update (0): update Configurare set cuvant=?,masca=? where id=?
+18 Jun 2024 22:44:05,069 DEBUG org.jboss.logging.DelegatingBasicLogger 394 debugf -  Delete (0): delete from Configurare where id=?
+18 Jun 2024 22:44:05,084 TRACE org.hibernate.metamodel.internal.MetadataContext 286 wrapUp - Wrapping up metadata context...
+18 Jun 2024 22:44:05,084 TRACE org.hibernate.metamodel.internal.MetadataContext 297 wrapUp - Starting entity [mpp.Configurare]
+18 Jun 2024 22:44:05,085 TRACE org.hibernate.metamodel.internal.AttributeFactory 173 buildIdAttribute - Building identifier attribute [mpp.Configurare.id]
+18 Jun 2024 22:44:05,085 TRACE org.hibernate.metamodel.internal.AttributeFactory 398 determineAttributeMetadata - Starting attribute metadata determination [id]
+18 Jun 2024 22:44:05,085 TRACE org.hibernate.metamodel.internal.AttributeFactory 401 determineAttributeMetadata -     Determined member [private java.lang.Integer mpp.Configurare.id]
+18 Jun 2024 22:44:05,085 TRACE org.hibernate.metamodel.internal.AttributeFactory 405 determineAttributeMetadata -     Determined type [name=integer, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 110 buildAttribute - Building attribute [mpp.Configurare.cuvant]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 398 determineAttributeMetadata - Starting attribute metadata determination [cuvant]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 401 determineAttributeMetadata -     Determined member [private java.lang.String mpp.Configurare.cuvant]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 405 determineAttributeMetadata -     Determined type [name=string, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 110 buildAttribute - Building attribute [mpp.Configurare.masca]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 398 determineAttributeMetadata - Starting attribute metadata determination [masca]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 401 determineAttributeMetadata -     Determined member [private java.lang.String mpp.Configurare.masca]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.AttributeFactory 405 determineAttributeMetadata -     Determined type [name=string, class=org.hibernate.type.internal.NamedBasicTypeImpl]
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.model.domain.AbstractIdentifiableType 403 interpretIdDescriptor - Interpreting domain-model identifier descriptor
+18 Jun 2024 22:44:05,088 TRACE org.hibernate.metamodel.internal.MetadataContext 340 wrapUp - Completed entity [mpp.Configurare]
+18 Jun 2024 22:44:05,090 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+18 Jun 2024 22:44:05,090 DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 45 initiateService - No JtaPlatform was specified, checking resolver
+18 Jun 2024 22:44:05,090 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatformResolver]
+18 Jun 2024 22:44:05,091 DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator 34 initiateService - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+18 Jun 2024 22:44:05,092 DEBUG org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver 138 resolveJtaPlatform - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18 Jun 2024 22:44:05,092 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 58 initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18 Jun 2024 22:44:05,093 DEBUG org.hibernate.type.spi.TypeConfiguration 206 scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6a5d228e] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@52002ff7]
+18 Jun 2024 22:44:05,094 DEBUG org.hibernate.query.internal.NamedObjectRepositoryImpl 243 checkNamedQueries - Checking 0 named HQL queries
+18 Jun 2024 22:44:05,094 DEBUG org.hibernate.query.internal.NamedObjectRepositoryImpl 267 checkNamedQueries - Checking 0 named SQL queries
+18 Jun 2024 22:44:05,095 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.tool.schema.spi.SchemaManagementTool]
+18 Jun 2024 22:44:05,100 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider]
+18 Jun 2024 22:44:05,107 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:05,108 INFO  org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl 52 getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3190b238] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+18 Jun 2024 22:44:05,108 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:05,108 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:05,108 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:05,108 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT
+  NULL AS TABLE_CAT,
+  NULL AS TABLE_SCHEM,
+  NAME AS TABLE_NAME,
+  TYPE AS TABLE_TYPE,
+  NULL AS REMARKS,
+  NULL AS TYPE_CAT,
+  NULL AS TYPE_SCHEM,
+  NULL AS TYPE_NAME,
+  NULL AS SELF_REFERENCING_COL_NAME,
+  NULL AS REF_GENERATION
+FROM
+  (
+    SELECT
+      'sqlite_schema' AS NAME,
+      'SYSTEM TABLE' AS TYPE    UNION ALL
+    SELECT
+      NAME,
+      UPPER(TYPE) AS TYPE
+    FROM
+      sqlite_schema
+    WHERE
+      NAME NOT LIKE 'sqlite\_%' ESCAPE '\'
+      AND UPPER(TYPE) IN ('TABLE', 'VIEW')
+    UNION ALL
+    SELECT
+      NAME,
+      'GLOBAL TEMPORARY' AS TYPE
+    FROM
+      sqlite_temp_master
+    UNION ALL
+    SELECT
+      NAME,
+      'SYSTEM TABLE' AS TYPE
+    FROM
+      sqlite_schema
+    WHERE
+      NAME LIKE 'sqlite\_%' ESCAPE '\'
+  )
+ WHERE TABLE_NAME LIKE '%' ESCAPE '\' AND TABLE_TYPE IN ('TABLE','VIEW') ORDER BY TABLE_TYPE, TABLE_NAME;
+18 Jun 2024 22:44:05,110 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT
+  NULL AS TABLE_CAT,
+  NULL AS TABLE_SCHEM,
+  NAME AS TABLE_NAME,
+  TYPE AS TABLE_TYPE,
+  NULL AS REMARKS,
+  NULL AS TYPE_CAT,
+  NULL AS TYPE_SCHEM,
+  NULL AS TYPE_NAME,
+  NULL AS SELF_REFERENCING_COL_NAME,
+  NULL AS REF_GENERATION
+FROM
+  (
+    SELECT
+      'sqlite_schema' AS NAME,
+      'SYSTEM TABLE' AS TYPE    UNION ALL
+    SELECT
+      NAME,
+      UPPER(TYPE) AS TYPE
+    FROM
+      sqlite_schema
+    WHERE
+      NAME NOT LIKE 'sqlite\_%' ESCAPE '\'
+      AND UPPER(TYPE) IN ('TABLE', 'VIEW')
+    UNION ALL
+    SELECT
+      NAME,
+      'GLOBAL TEMPORARY' AS TYPE
+    FROM
+      sqlite_temp_master
+    UNION ALL
+    SELECT
+      NAME,
+      'SYSTEM TABLE' AS TYPE
+    FROM
+      sqlite_schema
+    WHERE
+      NAME LIKE 'sqlite\_%' ESCAPE '\'
+  )
+ WHERE TABLE_NAME LIKE '%' ESCAPE '\' ORDER BY TABLE_TYPE, TABLE_NAME;
+18 Jun 2024 22:44:05,110 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT LIKE('%autoincrement%', LOWER(sql)) FROM sqlite_schema WHERE LOWER(name) = LOWER('sqlite_schema') AND TYPE IN ('table', 'view')
+18 Jun 2024 22:44:05,110 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] PRAGMA table_xinfo('sqlite_schema')
+18 Jun 2024 22:44:05,111 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT LIKE('%autoincrement%', LOWER(sql)) FROM sqlite_schema WHERE LOWER(name) = LOWER('sqlite_sequence') AND TYPE IN ('table', 'view')
+18 Jun 2024 22:44:05,111 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] PRAGMA table_xinfo('sqlite_sequence')
+18 Jun 2024 22:44:05,111 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT LIKE('%autoincrement%', LOWER(sql)) FROM sqlite_schema WHERE LOWER(name) = LOWER('Configurare') AND TYPE IN ('table', 'view')
+18 Jun 2024 22:44:05,111 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] PRAGMA table_xinfo('Configurare')
+18 Jun 2024 22:44:05,112 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT LIKE('%autoincrement%', LOWER(sql)) FROM sqlite_schema WHERE LOWER(name) = LOWER('Cuvant') AND TYPE IN ('table', 'view')
+18 Jun 2024 22:44:05,112 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] PRAGMA table_xinfo('Cuvant')
+18 Jun 2024 22:44:05,113 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT LIKE('%autoincrement%', LOWER(sql)) FROM sqlite_schema WHERE LOWER(name) = LOWER('Game') AND TYPE IN ('table', 'view')
+18 Jun 2024 22:44:05,113 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] PRAGMA table_xinfo('Game')
+18 Jun 2024 22:44:05,113 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT LIKE('%autoincrement%', LOWER(sql)) FROM sqlite_schema WHERE LOWER(name) = LOWER('JucatorGames') AND TYPE IN ('table', 'view')
+18 Jun 2024 22:44:05,113 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] PRAGMA table_xinfo('JucatorGames')
+18 Jun 2024 22:44:05,114 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT LIKE('%autoincrement%', LOWER(sql)) FROM sqlite_schema WHERE LOWER(name) = LOWER('Persoana') AND TYPE IN ('table', 'view')
+18 Jun 2024 22:44:05,114 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] PRAGMA table_xinfo('Persoana')
+18 Jun 2024 22:44:05,114 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] select null as TABLE_CAT, null as TABLE_SCHEM, tblname as TABLE_NAME, cn as COLUMN_NAME, ct as DATA_TYPE, tn as TYPE_NAME, colSize as COLUMN_SIZE, 2000000000 as BUFFER_LENGTH, colDecimalDigits as DECIMAL_DIGITS, 10   as NUM_PREC_RADIX, colnullable as NULLABLE, null as REMARKS, colDefault as COLUMN_DEF, 0    as SQL_DATA_TYPE, 0    as SQL_DATETIME_SUB, 2000000000 as CHAR_OCTET_LENGTH, ordpos as ORDINAL_POSITION, (case colnullable when 0 then 'NO' when 1 then 'YES' else '' end)    as IS_NULLABLE, null as SCOPE_CATALOG, null as SCOPE_SCHEMA, null as SCOPE_TABLE, null as SOURCE_DATA_TYPE, (case colautoincrement when 0 then 'NO' when 1 then 'YES' else '' end) as IS_AUTOINCREMENT, (case colgenerated when 0 then 'NO' when 1 then 'YES' else '' end) as IS_GENERATEDCOLUMN from (select 1 as ordpos, 1 as colnullable,12 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'sqlite_schema' as tblname, 'type' as cn, 'TEXT' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 2 as ordpos, 1 as colnullable,12 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'sqlite_schema' as tblname, 'name' as cn, 'TEXT' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 3 as ordpos, 1 as colnullable,12 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'sqlite_schema' as tblname, 'tbl_name' as cn, 'TEXT' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 4 as ordpos, 1 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'sqlite_schema' as tblname, 'rootpage' as cn, 'INT' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 5 as ordpos, 1 as colnullable,12 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'sqlite_schema' as tblname, 'sql' as cn, 'TEXT' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 1 as ordpos, 1 as colnullable,12 as ct, 2000000000 as colSize, 10 as colDecimalDigits, 'sqlite_sequence' as tblname, 'name' as cn, '' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 2 as ordpos, 1 as colnullable,12 as ct, 2000000000 as colSize, 10 as colDecimalDigits, 'sqlite_sequence' as tblname, 'seq' as cn, '' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 1 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'Configurare' as tblname, 'id' as cn, 'INTEGER' as tn, null as colDefault,1 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 2 as ordpos, 0 as colnullable,12 as ct, 10 as colSize, 0 as colDecimalDigits, 'Configurare' as tblname, 'masca' as cn, 'VARCHAR' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 3 as ordpos, 0 as colnullable,12 as ct, 10 as colSize, 0 as colDecimalDigits, 'Configurare' as tblname, 'cuvant' as cn, 'VARCHAR' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 1 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'Cuvant' as tblname, 'id' as cn, 'INTEGER' as tn, null as colDefault,1 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 2 as ordpos, 0 as colnullable,12 as ct, 30 as colSize, 0 as colDecimalDigits, 'Cuvant' as tblname, 'cuvant' as cn, 'VARCHAR' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 1 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'Game' as tblname, 'id' as cn, 'INTEGER' as tn, null as colDefault,1 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 2 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'Game' as tblname, 'idConfigurare' as cn, 'INTEGER' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 3 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'Game' as tblname, 'score' as cn, 'INTEGER' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 4 as ordpos, 0 as colnullable,12 as ct, 20 as colSize, 0 as colDecimalDigits, 'Game' as tblname, 'oraStart' as cn, 'VARCHAR' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 5 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'Game' as tblname, 'noLitereGhicite' as cn, 'INTEGER' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 6 as ordpos, 0 as colnullable,12 as ct, 30 as colSize, 0 as colDecimalDigits, 'Game' as tblname, 'litereGhicite' as cn, 'VARHCAR' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 1 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'JucatorGames' as tblname, 'id' as cn, 'INTEGER' as tn, null as colDefault,1 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 2 as ordpos, 1 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'JucatorGames' as tblname, 'idPersoana' as cn, 'INTEGER' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 3 as ordpos, 1 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'JucatorGames' as tblname, 'idGame' as cn, 'INTEGER' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 1 as ordpos, 0 as colnullable,4 as ct, 2000000000 as colSize, 0 as colDecimalDigits, 'Persoana' as tblname, 'id' as cn, 'INTEGER' as tn, null as colDefault,1 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\' union all select 2 as ordpos, 0 as colnullable,12 as ct, 30 as colSize, 0 as colDecimalDigits, 'Persoana' as tblname, 'username' as cn, 'VARCHAR' as tn, null as colDefault,0 as colautoincrement,0 as colgenerated where upper(cn) like upper('%') ESCAPE '\') order by TABLE_SCHEM, TABLE_NAME, ORDINAL_POSITION;
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 200 toMetaDataObjectName - Normalizing identifier quoting for object name [Configurare]
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 162 toMetaDataText - Rendering unquoted identifier [Configurare] in mixed case for use in DatabaseMetaData
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 200 toMetaDataObjectName - Normalizing identifier quoting for object name [id]
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 162 toMetaDataText - Rendering unquoted identifier [id] in mixed case for use in DatabaseMetaData
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 200 toMetaDataObjectName - Normalizing identifier quoting for object name [cuvant]
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 162 toMetaDataText - Rendering unquoted identifier [cuvant] in mixed case for use in DatabaseMetaData
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 200 toMetaDataObjectName - Normalizing identifier quoting for object name [masca]
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 162 toMetaDataText - Rendering unquoted identifier [masca] in mixed case for use in DatabaseMetaData
+18 Jun 2024 22:44:05,116 DEBUG org.hibernate.tool.schema.internal.StandardTableMigrator 107 sqlAlterStrings - No alter strings for table : Configurare
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 200 toMetaDataObjectName - Normalizing identifier quoting for object name [Configurare]
+18 Jun 2024 22:44:05,116 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 162 toMetaDataText - Rendering unquoted identifier [Configurare] in mixed case for use in DatabaseMetaData
+18 Jun 2024 22:44:05,117 TRACE org.hibernate.tool.schema.UniqueConstraintSchemaUpdateStrategy 50 interpret - Interpreting UniqueConstraintSchemaUpdateStrategy from setting : null
+18 Jun 2024 22:44:05,117 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 200 toMetaDataObjectName - Normalizing identifier quoting for object name [Configurare]
+18 Jun 2024 22:44:05,117 TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl 162 toMetaDataText - Rendering unquoted identifier [Configurare] in mixed case for use in DatabaseMetaData
+18 Jun 2024 22:44:05,117 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:05,117 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:05,117 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+18 Jun 2024 22:44:05,118 DEBUG org.hibernate.internal.SessionFactoryRegistry 52 <init> - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@34ba5515
+18 Jun 2024 22:44:05,118 DEBUG org.hibernate.internal.SessionFactoryRegistry 74 addSessionFactory - Registering SessionFactory: df64cd49-e7ef-4697-b0a7-a0e9507470b0 (<unnamed>)
+18 Jun 2024 22:44:05,118 DEBUG org.hibernate.internal.SessionFactoryRegistry 81 addSessionFactory - Not binding SessionFactory to JNDI, no JNDI name configured
+18 Jun 2024 22:44:05,118 TRACE org.hibernate.type.spi.TypeConfiguration 270 sessionFactoryCreated - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@52002ff7] for TypeConfiguration
+18 Jun 2024 22:44:05,118 DEBUG org.hibernate.internal.SessionFactoryImpl 334 <init> - Instantiated SessionFactory
+18 Jun 2024 22:44:05,118 TRACE org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl 1363 openSession - Opening Hibernate Session.  tenant=null
+18 Jun 2024 22:44:05,136 TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl 234 initializeService - Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+18 Jun 2024 22:44:05,141 DEBUG org.hibernate.stat.internal.StatisticsInitiator 87 initiateServiceInternal - Statistics initialized [enabled=false]
+18 Jun 2024 22:44:05,144 TRACE org.hibernate.internal.SessionImpl 272 <init> - Opened Session [de24d6e8-ad70-4c98-b2be-6fd768c4edcf] at timestamp: 1718739845144
+18 Jun 2024 22:44:05,146 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl 53 <init> - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+18 Jun 2024 22:44:05,146 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl 81 begin - begin
+18 Jun 2024 22:44:05,146 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:05,146 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 71 begin - Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+18 Jun 2024 22:44:05,146 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 73 begin - Transaction begun via JDBC Connection.setAutoCommit(false)
+18 Jun 2024 22:44:05,147 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl 163 afterBeginCallback - ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+18 Jun 2024 22:44:05,149 TRACE org.hibernate.engine.spi.IdentifierValue 132 isUnsaved - ID unsaved-value: null
+18 Jun 2024 22:44:05,150 TRACE org.hibernate.event.internal.EntityState 69 getEntityState - Detached instance of: mpp.Configurare
+18 Jun 2024 22:44:05,150 TRACE org.hibernate.event.internal.DefaultMergeEventListener 386 entityIsDetached - Merging detached instance
+18 Jun 2024 22:44:05,153 TRACE org.hibernate.event.internal.DefaultLoadEventListener 233 proxyOrLoad - Loading entity: [mpp.Configurare#-1]
+18 Jun 2024 22:44:05,153 TRACE org.hibernate.event.internal.DefaultLoadEventListener 521 doLoad - Attempting to resolve: [mpp.Configurare#-1]
+18 Jun 2024 22:44:05,154 TRACE org.hibernate.event.internal.DefaultLoadEventListener 585 loadFromCacheOrDatasource - Object not resolved in any cache: [mpp.Configurare#-1]
+18 Jun 2024 22:44:05,154 TRACE org.hibernate.persister.entity.AbstractEntityPersister 3743 doLoad - Fetching entity: [mpp.Configurare#-1]
+18 Jun 2024 22:44:05,154 DEBUG org.hibernate.sql.ast.spi.SqlAliasBaseImpl 33 generateNewAlias - Created new SQL alias : c1_0
+18 Jun 2024 22:44:05,154 DEBUG org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl 98 registerTableGroup - Registration of TableGroup [StandardTableGroup(mpp.Configurare)] with identifierForTableGroup [mpp.Configurare] for NavigablePath [mpp.Configurare] 
+18 Jun 2024 22:44:05,154 TRACE org.hibernate.loader.ast.internal.LoaderSelectBuilder 786 visitFetches - Starting visitation of FetchParent's Fetchables : mpp.Configurare
+18 Jun 2024 22:44:05,155 DEBUG org.hibernate.sql.results.graph.DomainResultGraphPrinter 67 visitDomainResults - DomainResult Graph:
+ \-EntityResultImpl [mpp.Configurare]
+ |  +-BasicFetch [mpp.Configurare.cuvant]
+ |  \-BasicFetch [mpp.Configurare.masca]
+
+18 Jun 2024 22:44:05,155 TRACE org.hibernate.sql.results.graph.DomainResultGraphPrinter 70 visitDomainResults - Stack trace calling DomainResultGraphPrinter
+java.lang.Exception: null
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.visitDomainResults(DomainResultGraphPrinter.java:70) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:46) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:37) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translateSelect(AbstractSqlAstTranslator.java:858) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translate(AbstractSqlAstTranslator.java:811) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdLoadPlan.<init>(SingleIdLoadPlan.java:66) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.createLoadPlan(SingleIdEntityLoaderStandardImpl.java:198) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.lambda$new$0(SingleIdEntityLoaderStandardImpl.java:41) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.getInternalCascadeLoadPlan(SingleIdEntityLoaderStandardImpl.java:164) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.resolveLoadPlan(SingleIdEntityLoaderStandardImpl.java:107) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.ast.internal.SingleIdEntityLoaderStandardImpl.load(SingleIdEntityLoaderStandardImpl.java:70) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:3748) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3737) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:604) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromCacheOrDatasource(DefaultLoadEventListener.java:590) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:560) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:544) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:207) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadWithRegularProxy(DefaultLoadEventListener.java:290) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:242) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:111) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:68) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1222) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1210) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:209) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.doLoad(IdentifierLoadAccessImpl.java:160) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.lambda$load$1(IdentifierLoadAccessImpl.java:149) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.perform(IdentifierLoadAccessImpl.java:112) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.loader.internal.IdentifierLoadAccessImpl.load(IdentifierLoadAccessImpl.java:149) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1023) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.lambda$entityIsDetached$0(DefaultMergeEventListener.java:407) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.LoadQueryInfluencers.fromInternalFetchProfile(LoadQueryInfluencers.java:99) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:405) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:208) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:146) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:130) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:84) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:847) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:833) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at mpp.RepoORM.RepoConfigurareHibernate.save(RepoConfigurareHibernate.java:56) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.RepoORM.RepoConfigurareHibernate.save(RepoConfigurareHibernate.java:25) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.ServiceImplementation.saveConfigurare(ServiceImplementation.java:61) [main/:?]
+	at mpp.ProtocolRPC.ClientWorker.handleSAVE_CONFIGURARE(ClientWorker.java:167) [Networking-1.0-SNAPSHOT.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at mpp.ProtocolRPC.ClientWorker.handleRequest(ClientWorker.java:91) [Networking-1.0-SNAPSHOT.jar:?]
+	at mpp.ProtocolRPC.ClientWorker.run(ClientWorker.java:43) [Networking-1.0-SNAPSHOT.jar:?]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+18 Jun 2024 22:44:05,155 DEBUG org.hibernate.sql.ast.SqlTreePrinter 46 logSqlAst - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (c1 : mpp.Configurare) {
+          primaryTableReference : Configurare as c1_0
+        }
+      }
+    }
+
+18 Jun 2024 22:44:05,162 DEBUG org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl 303 resolveJdbcValuesSource - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+18 Jun 2024 22:44:05,167 TRACE org.hibernate.sql.results.internal.ResultsHelper$1 119 resolveInitializer - Registering initializer : EntityResultInitializer(mpp.Configurare)
+18 Jun 2024 22:44:05,168 DEBUG org.hibernate.sql.results.internal.NavigablePathMapToInitializer 76 logInitializers - Initializer list:
+	  mpp.Configurare -> EntityResultInitializer(mpp.Configurare)@1090668219 (SingleTableEntityPersister(mpp.Configurare))
+
+18 Jun 2024 22:44:05,169 TRACE org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess 229 executeQuery - Executing query to retrieve ResultSet : select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=?
+18 Jun 2024 22:44:05,170 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger 135 logStatement - 
+    [34mselect[0m
+        c1_0.id,
+        c1_0.cuvant,
+        c1_0.masca 
+    [34mfrom[0m
+        Configurare c1_0 
+    [34mwhere[0m
+        c1_0.id=?
+18 Jun 2024 22:44:05,170 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=?
+18 Jun 2024 22:44:05,171 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 82 register - Registering statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=null]
+18 Jun 2024 22:44:05,171 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl 322 registerLastQuery - Registering last query statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=null]
+18 Jun 2024 22:44:05,171 TRACE org.hibernate.type.descriptor.JdbcBindingLogging 24 logBinding - binding parameter (1:INTEGER) <- [-1]
+18 Jun 2024 22:44:05,172 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 221 register - Registering result set [org.sqlite.jdbc4.JDBC4ResultSet@2ef5ea04]
+18 Jun 2024 22:44:05,172 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 48 afterStatement - LogicalConnection#afterStatement
+18 Jun 2024 22:44:05,172 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 117 release - Releasing result set [org.sqlite.jdbc4.JDBC4ResultSet@2ef5ea04]
+18 Jun 2024 22:44:05,172 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 169 close - Closing result set [org.sqlite.jdbc4.JDBC4ResultSet@2ef5ea04]
+18 Jun 2024 22:44:05,172 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 96 release - Releasing statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=[-1]]
+18 Jun 2024 22:44:05,173 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 187 close - Closing prepared statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=[-1]]
+18 Jun 2024 22:44:05,174 TRACE org.hibernate.engine.internal.StatefulPersistenceContext 1134 initializeNonLazyCollections - Initializing non-lazy collections
+18 Jun 2024 22:44:05,174 TRACE org.hibernate.event.internal.DefaultMergeEventListener 284 entityIsTransient - Merging transient instance
+18 Jun 2024 22:44:05,177 TRACE org.hibernate.event.internal.AbstractSaveEventListener 211 performSave - Saving [mpp.Configurare#<null>]
+18 Jun 2024 22:44:05,178 TRACE org.hibernate.engine.spi.ActionQueue 321 addAction - Adding an EntityIdentityInsertAction for [mpp.Configurare] object
+18 Jun 2024 22:44:05,179 TRACE org.hibernate.engine.spi.ActionQueue 266 addInsertAction - Executing inserts before finding non-nullable transient entities for early insert: [EntityIdentityInsertAction[mpp.Configurare#<null>]]
+18 Jun 2024 22:44:05,179 TRACE org.hibernate.engine.spi.ActionQueue 271 addInsertAction - Adding insert with no non-nullable, transient entities: [EntityIdentityInsertAction[mpp.Configurare#<null>]]
+18 Jun 2024 22:44:05,179 TRACE org.hibernate.engine.spi.ActionQueue 288 addResolvedEntityInsertAction - Executing insertions before resolved early-insert
+18 Jun 2024 22:44:05,179 DEBUG org.hibernate.engine.spi.ActionQueue 290 addResolvedEntityInsertAction - Executing identity-insert immediately
+18 Jun 2024 22:44:05,185 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger 135 logStatement - 
+    [34minsert[0m 
+    [34minto[0m
+        Configurare
+        (cuvant, masca) 
+    [34mvalues[0m
+        (?, ?)
+18 Jun 2024 22:44:05,187 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] insert into Configurare (cuvant,masca) values (?,?)
+18 Jun 2024 22:44:05,187 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 82 register - Registering statement [insert into Configurare (cuvant,masca) values (?,?) 
+ parameters=null]
+18 Jun 2024 22:44:05,187 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 221 register - Registering result set [null]
+18 Jun 2024 22:44:05,187 TRACE org.hibernate.type.descriptor.JdbcBindingLogging 24 logBinding - binding parameter (1:VARCHAR) <- [banana]
+18 Jun 2024 22:44:05,187 TRACE org.hibernate.type.descriptor.JdbcBindingLogging 24 logBinding - binding parameter (2:VARCHAR) <- [CVCVCV]
+18 Jun 2024 22:44:05,188 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT last_insert_rowid();
+18 Jun 2024 22:44:05,188 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 96 release - Releasing statement [insert into Configurare (cuvant,masca) values (?,?) 
+ parameters=[banana, CVCVCV]]
+18 Jun 2024 22:44:05,188 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 169 close - Closing result set [null]
+18 Jun 2024 22:44:05,188 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 187 close - Closing prepared statement [insert into Configurare (cuvant,masca) values (?,?) 
+ parameters=[banana, CVCVCV]]
+18 Jun 2024 22:44:05,188 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl 270 afterStatementExecution - Starting after statement execution processing [AFTER_TRANSACTION]
+18 Jun 2024 22:44:05,188 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger 135 logStatement - 
+    [34mselect[0m
+        last_insert_rowid()
+18 Jun 2024 22:44:05,189 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] select last_insert_rowid()
+18 Jun 2024 22:44:05,189 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 82 register - Registering statement [select last_insert_rowid() 
+ parameters=null]
+18 Jun 2024 22:44:05,189 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 221 register - Registering result set [org.sqlite.jdbc4.JDBC4ResultSet@573194f5]
+18 Jun 2024 22:44:05,191 TRACE org.hibernate.type.descriptor.JdbcExtractingLogging 24 logExtracted - extracted value (1:INTEGER) -> [1]
+18 Jun 2024 22:44:05,191 DEBUG org.hibernate.id.IdentifierGeneratorHelper 92 getGeneratedIdentity - Natively generated identity (mpp.Configurare) : 1
+18 Jun 2024 22:44:05,191 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 96 release - Releasing statement [select last_insert_rowid() 
+ parameters=null]
+18 Jun 2024 22:44:05,191 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 169 close - Closing result set [org.sqlite.jdbc4.JDBC4ResultSet@573194f5]
+18 Jun 2024 22:44:05,191 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 187 close - Closing prepared statement [select last_insert_rowid() 
+ parameters=null]
+18 Jun 2024 22:44:05,191 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl 270 afterStatementExecution - Starting after statement execution processing [AFTER_TRANSACTION]
+18 Jun 2024 22:44:05,191 TRACE org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable 103 execute - Post-insert generated value : `1` (mpp.Configurare)
+18 Jun 2024 22:44:05,194 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl 98 commit - committing
+18 Jun 2024 22:44:05,194 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl 167 beforeCompletionCallback - ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+18 Jun 2024 22:44:05,194 TRACE org.hibernate.internal.SessionImpl 1975 beforeTransactionCompletion - SessionImpl#beforeTransactionCompletion()
+18 Jun 2024 22:44:05,194 TRACE org.hibernate.internal.SessionImpl 483 managedFlush - Automatically flushing session
+18 Jun 2024 22:44:05,194 TRACE org.hibernate.event.internal.AbstractFlushingEventListener 72 flushEverythingToExecutions - Flushing session
+18 Jun 2024 22:44:05,194 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener 136 prepareEntityFlushes - Processing flush-time cascades
+18 Jun 2024 22:44:05,194 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener 185 prepareCollectionFlushes - Dirty checking collections
+18 Jun 2024 22:44:05,195 TRACE org.hibernate.event.internal.AbstractFlushingEventListener 197 flushEntities - Flushing entities and processing referenced collections
+18 Jun 2024 22:44:05,196 TRACE org.hibernate.event.internal.AbstractFlushingEventListener 263 flushCollections - Processing unreferenced collections
+18 Jun 2024 22:44:05,196 TRACE org.hibernate.event.internal.AbstractFlushingEventListener 276 flushCollections - Scheduling collection removes/(re)creates/updates
+18 Jun 2024 22:44:05,198 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener 110 logFlushResults - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+18 Jun 2024 22:44:05,198 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener 117 logFlushResults - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+18 Jun 2024 22:44:05,198 DEBUG org.hibernate.internal.util.EntityPrinter 112 toString - Listing entities:
+18 Jun 2024 22:44:05,198 DEBUG org.hibernate.internal.util.EntityPrinter 123 toString - mpp.Configurare{masca=CVCVCV, cuvant=banana, id=1}
+18 Jun 2024 22:44:05,198 TRACE org.hibernate.event.internal.AbstractFlushingEventListener 348 performExecutions - Executing flush
+18 Jun 2024 22:44:05,198 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl 270 afterStatementExecution - Starting after statement execution processing [AFTER_TRANSACTION]
+18 Jun 2024 22:44:05,198 TRACE org.hibernate.event.internal.AbstractFlushingEventListener 383 postFlush - Post flush
+18 Jun 2024 22:44:05,199 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 53 beforeTransactionCompletion - LogicalConnection#beforeTransactionCompletion
+18 Jun 2024 22:44:05,199 TRACE org.hibernate.resource.transaction.internal.SynchronizationRegistryStandardImpl 55 notifySynchronizationsBeforeTransactionCompletion - SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+18 Jun 2024 22:44:05,199 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 85 commit - Preparing to commit transaction via JDBC Connection.commit()
+18 Jun 2024 22:44:05,199 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:05,201 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:05,201 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 88 commit - Transaction committed via JDBC Connection.commit()
+18 Jun 2024 22:44:05,201 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 58 afterTransaction - LogicalConnection#afterTransaction
+18 Jun 2024 22:44:05,201 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,201 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 179 afterTransaction - Initiating JDBC connection release from afterTransaction
+18 Jun 2024 22:44:05,201 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,201 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:05,201 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl 185 afterCompletionCallback - ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+18 Jun 2024 22:44:05,201 TRACE org.jboss.logging.DelegatingBasicLogger 159 tracef - SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 58 afterTransaction - LogicalConnection#afterTransaction
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,202 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 179 afterTransaction - Initiating JDBC connection release from afterTransaction
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.internal.SessionImpl 1990 afterTransactionCompletion - SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.internal.SessionImpl 396 closeWithoutOpenChecks - Closing session [de24d6e8-ad70-4c98-b2be-6fd768c4edcf]
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl 152 close - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@65a054e1]
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 256 close - Closing logical connection
+18 Jun 2024 22:44:05,202 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 263 close - Logical connection closed
+18 Jun 2024 22:44:05,202 TRACE mpp.RepoORM.RepoConfigurareHibernate 59 save - Exit
+18 Jun 2024 22:44:05,206 TRACE mpp.Repo.RepoGame 100 save - Enter
+18 Jun 2024 22:44:05,206 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:44:05,206 TRACE mpp.Utils.UtilsJDBC 23 getNewConnection - Enter
+18 Jun 2024 22:44:05,206 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Vocale/VocaleConsoaneDataBase_ASM
+18 Jun 2024 22:44:05,207 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] pragma busy_timeout=3000
+18 Jun 2024 22:44:05,207 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] INSERT INTO Game(idConfigurare, score, oraStart, noLitereGhicite, litereGhicite) VALUES (?,?,?,?,?) RETURNING id
+18 Jun 2024 22:44:05,213 TRACE mpp.Repo.RepoGame 120 save - Exit with(Game{id=1, configurare=Configurare{id=1, masca='CVCVCV', cuvant='banana'}, score=9, oraStart='22', noIncercari=4})
+18 Jun 2024 22:44:05,221 TRACE mpp.Repo.RepoJucatorGame 73 save - Enter
+18 Jun 2024 22:44:05,221 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:44:05,221 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] INSERT INTO JucatorGames(idPersoana, idGame) VALUES (?, ?) RETURNING id
+18 Jun 2024 22:44:05,222 TRACE mpp.Repo.RepoJucatorGame 83 save - Exit with(JucatorGame{id=1, persoana=Jucator{id=2, username='Teo'}, game=Game{id=1, configurare=Configurare{id=1, masca='CVCVCV', cuvant='banana'}, score=9, oraStart='22', noIncercari=4}})
+18 Jun 2024 22:44:05,226 TRACE mpp.Repo.RepoJucatorGame 42 findAll - Enter
+18 Jun 2024 22:44:05,226 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:44:05,226 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM JucatorGames
+18 Jun 2024 22:44:05,227 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:44:05,227 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Persoana WHERE id = ?
+18 Jun 2024 22:44:05,227 TRACE mpp.Repo.RepoGame 38 findOne - Enter
+18 Jun 2024 22:44:05,227 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:44:05,227 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+18 Jun 2024 22:44:05,227 TRACE mpp.RepoORM.RepoConfigurareHibernate 31 findOne - Enter
+18 Jun 2024 22:44:05,227 TRACE org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl 1363 openSession - Opening Hibernate Session.  tenant=null
+18 Jun 2024 22:44:05,227 TRACE org.hibernate.internal.SessionImpl 272 <init> - Opened Session [c26f8d1c-5088-4ffe-9bd7-508b7e7f0c0b] at timestamp: 1718739845227
+18 Jun 2024 22:44:05,227 TRACE mpp.RepoORM.RepoConfigurareHibernate 34 findOne - Exit
+18 Jun 2024 22:44:05,227 TRACE org.hibernate.query.internal.QueryInterpretationCacheStandardImpl 121 resolveHqlInterpretation - QueryPlan#resolveHqlInterpretation( `from Configurare where id= ?1` )
+18 Jun 2024 22:44:05,228 DEBUG org.hibernate.query.hql.internal.StandardHqlTranslator 65 translate - HQL : from Configurare where id= ?1
+18 Jun 2024 22:44:05,335 DEBUG org.hibernate.query.hql.internal.HqlParseTreeBuilder$1 43 logUseOfReservedWordAsIdentifier - Encountered use of reserved word as identifier : =
+18 Jun 2024 22:44:05,375 TRACE org.hibernate.query.hql.internal.SqmPathRegistryImpl 61 register - SqmProcessingIndex#register(SqmPath) : mpp.Configurare(716784601764100)
+18 Jun 2024 22:44:05,378 TRACE org.hibernate.query.hql.internal.BasicDotIdentifierConsumer 83 consumeIdentifier - BasicDotIdentifierHandler#consumeIdentifier( id, true, true ) - id
+18 Jun 2024 22:44:05,378 TRACE org.hibernate.query.hql.internal.BasicDotIdentifierConsumer$BaseLocalSequencePart 118 resolvePathPart - BaseLocalSequencePart#consumeIdentifier( id, true, true ) - id
+18 Jun 2024 22:44:05,378 DEBUG org.hibernate.query.hql.internal.SqmPathRegistryImpl 262 findFromExposing - Unable to resolve unqualified attribute [id] in local from-clause
+18 Jun 2024 22:44:05,384 DEBUG org.hibernate.query.sqm.tree.expression.AbstractSqmExpression 45 internalApplyInferableType - Applying inferable type to SqmExpression [SqmPositionalParameter(1)] : null -> SqmBasicValuedSimplePath(mpp.Configurare(716784601764100).id)
+18 Jun 2024 22:44:05,391 DEBUG org.hibernate.query.sqm.internal.SqmTreePrinter 170 logTree - SqmStatement Tree :
+    -> [select]
+      -> [query-spec]
+        -> [select]
+          -> [selection]
+            -> [root] - `mpp.Configurare(716784601764100)`
+            <- [root] - `mpp.Configurare(716784601764100)`
+          <- [selection]
+        <- [select]
+        -> [from]
+          -> [root] - `mpp.Configurare(716784601764100)`
+          <- [root] - `mpp.Configurare(716784601764100)`
+        <- [from]
+        -> [where]
+          -> [EQUAL]
+              -> [basic-path] - `mpp.Configurare(716784601764100).id`
+              ?1
+          <- [EQUAL]
+        <- [where]
+      <- [query-spec]
+    <- [select]
+
+18 Jun 2024 22:44:05,414 TRACE org.hibernate.query.internal.QueryInterpretationCacheStandardImpl 70 resolveSelectQueryPlan - QueryPlan#getSelectQueryPlan(org.hibernate.query.sqm.internal.SqmInterpretationsKey@8467950a)
+18 Jun 2024 22:44:05,427 TRACE org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter 2583 consumeFromClauseCorrelatedRoot - Resolving SqmRoot [mpp.Configurare] to TableGroup
+18 Jun 2024 22:44:05,428 TRACE org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter 2750 consumeFromClauseRoot - Resolving SqmRoot [mpp.Configurare] to TableGroup
+18 Jun 2024 22:44:05,428 DEBUG org.hibernate.sql.ast.spi.SqlAliasBaseImpl 33 generateNewAlias - Created new SQL alias : c1_0
+18 Jun 2024 22:44:05,428 TRACE org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter 2817 consumeFromClauseRoot - Resolved SqmRoot [mpp.Configurare] to new TableGroup [StandardTableGroup(mpp.Configurare(716784601764100))]
+18 Jun 2024 22:44:05,428 DEBUG org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl 98 registerTableGroup - Registration of TableGroup [StandardTableGroup(mpp.Configurare(716784601764100))] with identifierForTableGroup [mpp.Configurare] for NavigablePath [mpp.Configurare] 
+18 Jun 2024 22:44:05,428 TRACE org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter 3199 consumeExplicitJoins - Visiting explicit joins for `mpp.Configurare(716784601764100)`
+18 Jun 2024 22:44:05,428 TRACE org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter 3933 visitRootPath - SqmRoot [mpp.Configurare] resolved to existing TableGroup [StandardTableGroup(mpp.Configurare(716784601764100))]
+18 Jun 2024 22:44:05,433 TRACE org.hibernate.persister.entity.AbstractEntityPersister 5952 findSubPart - #findSubPart(`id`)
+18 Jun 2024 22:44:05,433 DEBUG org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter 5893 determineValueMapping - Determining mapping-model type for SqmParameter : SqmPositionalParameter(1)
+18 Jun 2024 22:44:05,433 DEBUG org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter 5780 determineValueMapping - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(mpp.Configurare(716784601764100).id) 
+18 Jun 2024 22:44:05,433 TRACE org.hibernate.persister.entity.AbstractEntityPersister 5952 findSubPart - #findSubPart(`id`)
+18 Jun 2024 22:44:05,436 DEBUG org.hibernate.sql.results.graph.DomainResultGraphPrinter 67 visitDomainResults - DomainResult Graph:
+ \-EntityResultImpl [mpp.Configurare(716784601764100)]
+ |  +-BasicFetch [mpp.Configurare(716784601764100).cuvant]
+ |  \-BasicFetch [mpp.Configurare(716784601764100).masca]
+
+18 Jun 2024 22:44:05,436 TRACE org.hibernate.sql.results.graph.DomainResultGraphPrinter 70 visitDomainResults - Stack trace calling DomainResultGraphPrinter
+java.lang.Exception: null
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.visitDomainResults(DomainResultGraphPrinter.java:70) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:46) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.results.graph.DomainResultGraphPrinter.logDomainResultGraph(DomainResultGraphPrinter.java:37) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translateSelect(AbstractSqlAstTranslator.java:858) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.sql.ast.spi.AbstractSqlAstTranslator.translate(AbstractSqlAstTranslator.java:811) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.buildCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:433) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:327) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:303) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.query.sqm.internal.SqmSelectionQueryImpl.doList(SqmSelectionQueryImpl.java:364) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:427) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResultOrNull(AbstractSelectionQuery.java:600) [hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at mpp.RepoORM.RepoConfigurareHibernate.findOne(RepoConfigurareHibernate.java:35) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.RepoORM.RepoConfigurareHibernate.findOne(RepoConfigurareHibernate.java:25) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.Repo.RepoGame.findOne(RepoGame.java:53) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.Repo.RepoJucatorGame.findAll(RepoJucatorGame.java:53) [Persistance-1.0-SNAPSHOT.jar:?]
+	at mpp.ServiceImplementation.findAllJucatoriGames(ServiceImplementation.java:51) [main/:?]
+	at mpp.ProtocolRPC.ClientWorker.handleFIND_ALL_JUCATORI_GAMES(ClientWorker.java:143) [Networking-1.0-SNAPSHOT.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at mpp.ProtocolRPC.ClientWorker.handleRequest(ClientWorker.java:91) [Networking-1.0-SNAPSHOT.jar:?]
+	at mpp.ProtocolRPC.ClientWorker.run(ClientWorker.java:43) [Networking-1.0-SNAPSHOT.jar:?]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+18 Jun 2024 22:44:05,436 DEBUG org.hibernate.sql.ast.SqlTreePrinter 46 logSqlAst - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (c1 : mpp.Configurare(716784601764100)) {
+          primaryTableReference : Configurare as c1_0
+        }
+      }
+    }
+
+18 Jun 2024 22:44:05,438 DEBUG org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl 303 resolveJdbcValuesSource - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+18 Jun 2024 22:44:05,438 TRACE org.hibernate.sql.results.internal.ResultsHelper$1 119 resolveInitializer - Registering initializer : EntityResultInitializer(mpp.Configurare(716784601764100))
+18 Jun 2024 22:44:05,438 DEBUG org.hibernate.sql.results.internal.NavigablePathMapToInitializer 76 logInitializers - Initializer list:
+	  mpp.Configurare(716784601764100) -> EntityResultInitializer(mpp.Configurare(716784601764100))@663049842 (SingleTableEntityPersister(mpp.Configurare))
+
+18 Jun 2024 22:44:05,438 TRACE org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess 229 executeQuery - Executing query to retrieve ResultSet : select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=?
+18 Jun 2024 22:44:05,438 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger 135 logStatement - 
+    [34mselect[0m
+        c1_0.id,
+        c1_0.cuvant,
+        c1_0.masca 
+    [34mfrom[0m
+        Configurare c1_0 
+    [34mwhere[0m
+        c1_0.id=?
+18 Jun 2024 22:44:05,438 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] begin;
+18 Jun 2024 22:44:05,438 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=?
+18 Jun 2024 22:44:05,439 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 82 register - Registering statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=null]
+18 Jun 2024 22:44:05,439 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl 322 registerLastQuery - Registering last query statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=null]
+18 Jun 2024 22:44:05,439 TRACE org.hibernate.type.descriptor.JdbcBindingLogging 24 logBinding - binding parameter (1:INTEGER) <- [1]
+18 Jun 2024 22:44:05,439 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 221 register - Registering result set [org.sqlite.jdbc4.JDBC4ResultSet@d262dde]
+18 Jun 2024 22:44:05,439 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 48 afterStatement - LogicalConnection#afterStatement
+18 Jun 2024 22:44:05,440 TRACE org.hibernate.sql.results.internal.StandardRowReader 85 readRow - StandardRowReader#readRow
+18 Jun 2024 22:44:05,441 TRACE org.hibernate.sql.results.graph.entity.AbstractEntityInitializer 281 resolveKey - (o.h.s.r.g.e.i.EntityResultInitializer) Beginning Initializer#resolveKey process for entity : mpp.Configurare(716784601764100)
+18 Jun 2024 22:44:05,441 TRACE org.hibernate.type.descriptor.JdbcExtractingLogging 24 logExtracted - extracted value (1:INTEGER) -> [1]
+18 Jun 2024 22:44:05,441 DEBUG org.hibernate.sql.results.graph.basic.BasicResultAssembler 61 assemble - Extracted JDBC value [0] - [1]
+18 Jun 2024 22:44:05,441 DEBUG org.hibernate.sql.results.graph.entity.AbstractEntityInitializer 304 resolveKey - (EntityResultInitializer) Hydrated EntityKey (mpp.Configurare(716784601764100)): 1
+18 Jun 2024 22:44:05,441 TRACE org.hibernate.sql.results.graph.entity.AbstractEntityInitializer 501 resolveEntityInstance - (o.h.s.r.g.e.i.EntityResultInitializer) Beginning Initializer#resolveInstance process for entity (mpp.Configurare(716784601764100)) : 1
+18 Jun 2024 22:44:05,441 DEBUG org.hibernate.sql.results.graph.entity.AbstractEntityInitializer 693 instantiateEntity - (EntityResultInitializer) Created new entity instance [mpp.Configurare(716784601764100)#1] : 1430976654
+18 Jun 2024 22:44:05,442 TRACE org.hibernate.sql.results.graph.entity.AbstractEntityInitializer 831 initializeEntityInstance - (EntityResultInitializer) Beginning Initializer#initializeInstance process for entity mpp.Configurare(716784601764100)#1
+18 Jun 2024 22:44:05,442 TRACE org.hibernate.type.descriptor.JdbcExtractingLogging 24 logExtracted - extracted value (2:VARCHAR) -> [banana]
+18 Jun 2024 22:44:05,442 DEBUG org.hibernate.sql.results.graph.basic.BasicResultAssembler 61 assemble - Extracted JDBC value [1] - [banana]
+18 Jun 2024 22:44:05,442 TRACE org.hibernate.type.descriptor.JdbcExtractingLogging 24 logExtracted - extracted value (3:VARCHAR) -> [CVCVCV]
+18 Jun 2024 22:44:05,442 DEBUG org.hibernate.sql.results.graph.basic.BasicResultAssembler 61 assemble - Extracted JDBC value [2] - [CVCVCV]
+18 Jun 2024 22:44:05,443 DEBUG org.hibernate.sql.results.graph.entity.AbstractEntityInitializer 887 initializeEntityInstance - (EntityResultInitializer) Done materializing entityInstance : mpp.Configurare(716784601764100)#1
+18 Jun 2024 22:44:05,443 DEBUG org.hibernate.sql.results.internal.StandardRowReader 92 readRow - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@d867892
+18 Jun 2024 22:44:05,443 TRACE org.hibernate.sql.results.internal.StandardRowReader 102 afterRow - StandardRowReader#afterRow
+18 Jun 2024 22:44:05,443 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 117 release - Releasing result set [org.sqlite.jdbc4.JDBC4ResultSet@d262dde]
+18 Jun 2024 22:44:05,443 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 169 close - Closing result set [org.sqlite.jdbc4.JDBC4ResultSet@d262dde]
+18 Jun 2024 22:44:05,443 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 96 release - Releasing statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=[1]]
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 187 close - Closing prepared statement [select c1_0.id,c1_0.cuvant,c1_0.masca from Configurare c1_0 where c1_0.id=? 
+ parameters=[1]]
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.engine.internal.StatefulPersistenceContext 1134 initializeNonLazyCollections - Initializing non-lazy collections
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 58 afterTransaction - LogicalConnection#afterTransaction
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,444 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 179 afterTransaction - Initiating JDBC connection release from afterTransaction
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,444 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] commit;
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor 58 afterTransaction - LogicalConnection#afterTransaction
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,444 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 179 afterTransaction - Initiating JDBC connection release from afterTransaction
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.internal.SessionImpl 396 closeWithoutOpenChecks - Closing session [c26f8d1c-5088-4ffe-9bd7-508b7e7f0c0b]
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl 152 close - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@6e18b99]
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl 329 releaseResources - Releasing JDBC resources
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 256 close - Closing logical connection
+18 Jun 2024 22:44:05,444 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl 263 close - Logical connection closed
+18 Jun 2024 22:44:05,444 TRACE mpp.Repo.RepoGame 63 findOne - Exit with(Game{id=1, configurare=Configurare{id=1, masca='CVCVCV', cuvant='banana'}, score=9, oraStart='22', noIncercari=4})
+18 Jun 2024 22:44:05,444 TRACE mpp.Repo.RepoJucatorGame 67 findAll - Exit with([JucatorGame{id=1, persoana=Jucator{id=2, username='Teo'}, game=Game{id=1, configurare=Configurare{id=1, masca='CVCVCV', cuvant='banana'}, score=9, oraStart='22', noIncercari=4}}])
+18 Jun 2024 22:44:05,445 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+18 Jun 2024 22:44:05,445 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Cuvant ORDER BY RANDOM() LIMIT 1

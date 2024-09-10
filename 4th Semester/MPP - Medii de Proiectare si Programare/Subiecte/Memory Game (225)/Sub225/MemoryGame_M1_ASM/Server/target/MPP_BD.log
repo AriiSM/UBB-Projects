@@ -1,0 +1,1 @@
+15 Jun 2024 19:28:00,773 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Sub225/MemoryGameBazaDeDate

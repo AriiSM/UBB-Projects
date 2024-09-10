@@ -1,0 +1,9 @@
+rootProject.name = 'MemoryGame_M1_ASM'
+include 'Domain'
+include 'Server'
+include 'Persistance'
+include 'Networking'
+include 'Service'
+include 'Client'
+include 'RestServices'
+

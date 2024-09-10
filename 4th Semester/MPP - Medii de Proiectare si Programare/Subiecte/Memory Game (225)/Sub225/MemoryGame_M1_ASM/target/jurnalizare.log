@@ -1,0 +1,51 @@
+16 Jun 2024 16:04:38,270 TRACE mpp.Repo.RepoPlayer 52 findJucator - Enter
+16 Jun 2024 16:04:38,272 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,272 TRACE mpp.Utils.UtilsJDBC 23 getNewConnection - Enter
+16 Jun 2024 16:04:38,273 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Sub225/MemoryGameBazaDeDate
+16 Jun 2024 16:04:38,460 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-0] [SQLite EXEC] pragma busy_timeout=3000
+16 Jun 2024 16:04:38,462 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-0] [SQLite EXEC] SELECT * FROM Jucator WHERE username=?
+16 Jun 2024 16:04:38,466 TRACE mpp.Repo.RepoPlayer 62 findJucator - Exit with(Jucator{id=1, username='Ari'})
+16 Jun 2024 16:04:38,473 TRACE mpp.Repo.RepoPlayer 29 login - Enter
+16 Jun 2024 16:04:38,474 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,474 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE username=?
+16 Jun 2024 16:04:38,474 TRACE mpp.Repo.RepoPlayer 39 login - Exit with(Jucator{id=1, username='Ari'})
+16 Jun 2024 16:04:38,575 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,575 TRACE mpp.Utils.UtilsJDBC 23 getNewConnection - Enter
+16 Jun 2024 16:04:38,575 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Sub225/MemoryGameBazaDeDate
+16 Jun 2024 16:04:38,576 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] pragma busy_timeout=3000
+16 Jun 2024 16:04:38,576 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM JucatorGame
+16 Jun 2024 16:04:38,577 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,577 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,577 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,577 TRACE mpp.Utils.UtilsJDBC 23 getNewConnection - Enter
+16 Jun 2024 16:04:38,577 INFO  mpp.Utils.UtilsJDBC 25 getNewConnection - trying to connect to databse ... jdbc:sqlite:D:/FACULTATE/SEM4/MPP/PracticeForExam/Sub225/MemoryGameBazaDeDate
+16 Jun 2024 16:04:38,578 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] pragma busy_timeout=3000
+16 Jun 2024 16:04:38,578 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+16 Jun 2024 16:04:38,579 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,579 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,580 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,581 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+16 Jun 2024 16:04:38,581 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,581 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,582 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,582 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+16 Jun 2024 16:04:38,583 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,583 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,583 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,583 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+16 Jun 2024 16:04:38,584 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,584 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,584 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,584 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+16 Jun 2024 16:04:38,585 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,585 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,585 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,585 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+16 Jun 2024 16:04:38,586 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,586 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,586 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,586 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?
+16 Jun 2024 16:04:38,586 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,587 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Jucator WHERE idJucator = ?
+16 Jun 2024 16:04:38,587 TRACE mpp.Utils.UtilsJDBC 37 getConnection - Enter
+16 Jun 2024 16:04:38,587 TRACE org.sqlite.core.NativeDB 129 prepare - DriverManager [Thread-1] [SQLite EXEC] SELECT * FROM Game WHERE id = ?

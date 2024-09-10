@@ -1,0 +1,10 @@
+package mpp.Exceptions;
+
+public enum ExceptionType {
+    OTHER,
+    REPO_EXCEPTION,
+    VALIDATION_EXCEPTION,
+    INPUT_EXCEPTION,
+    NOTIFICATION_SERVICES_EXCEPTION,
+    SERVER_EXCEPTION
+}

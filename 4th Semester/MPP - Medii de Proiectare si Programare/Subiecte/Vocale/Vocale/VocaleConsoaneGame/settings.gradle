@@ -1,0 +1,9 @@
+rootProject.name = 'VocaleConsoaneGame'
+include 'Client'
+include 'Domain'
+include 'Networking'
+include 'Persistance'
+include 'Service'
+include 'Server'
+include 'RestServices'
+

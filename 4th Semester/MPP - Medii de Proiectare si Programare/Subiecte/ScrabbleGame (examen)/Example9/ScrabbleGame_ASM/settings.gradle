@@ -1,0 +1,9 @@
+rootProject.name = 'ScrabbleGame_ASM'
+include 'Client'
+include 'Domain'
+include 'Networking'
+include 'Persistance'
+include 'RestServices'
+include 'Server'
+include 'Service'
+

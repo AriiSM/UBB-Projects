@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mpp.GameControllerMemoryGame">
+   <children>
+      <GridPane fx:id="gridPane" layoutX="14.0" layoutY="44.0" prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: grey;" />
+      <Label fx:id="scoreLabel" layoutX="33.0" layoutY="339.0" prefHeight="30.0" prefWidth="192.0" text="Score: 0" />
+      <TableView fx:id="tabelClasament" layoutX="564.0" layoutY="76.0" prefHeight="262.0" prefWidth="277.0">
+        <columns>
+          <TableColumn fx:id="colJucatori" prefWidth="75.0" text="Jucatori" />
+          <TableColumn fx:id="colScor" prefWidth="75.0" text="Scor" />
+            <TableColumn fx:id="colDurata" prefWidth="75.0" text="Durata" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="20.0" layoutY="14.0" prefHeight="30.0" prefWidth="141.0" text="Memory Game">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="662.0" layoutY="30.0" text="Clasament">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="261.0" mnemonicParsing="false" onAction="#handlePlay" text="Play" />
+      <Button layoutX="77.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleResetGame" text="ResetGame" />
+   </children>
+</AnchorPane>

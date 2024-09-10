@@ -1,0 +1,10 @@
+rootProject.name = 'GropiGame_ASM'
+include 'Client'
+include 'Domain'
+include 'Networking'
+include 'Persistance'
+include 'RestServices'
+include 'Server'
+include 'Services'
+include 'Service'
+
