@@ -51,7 +51,3 @@ Aici vei găsi o colecție a proiectelor mele realizate de-a lungul **primelor 4
 
 ---
 
-### Cum să navighezi în repo:
-- Inca se lucreaza la flow!
-- Fiecare materie are un link care te va direcționa către directorul specific din repo. Accesează-le pentru a vedea proiectele și fișierele aferente fiecărei materii.
-- Proiectele sunt organizate pe semestre, astfel încât să fie ușor de găsit în funcție de cronologia studiilor.

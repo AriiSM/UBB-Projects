@@ -1,0 +1,33 @@
+program -> int main ( ) { lista_decl lista_instr return CONST ; }
+lista_decl -> dec ;
+dec -> tip ID = CONST
+tip -> int
+tip -> double
+lista_instr -> instr
+instr -> atribuire ;
+instr -> instr_if
+instr -> instr_loop
+instr -> intrare ;
+instr -> iesire
+atribuire -> ID = variabila op_atribui
+op_atribui -> operator_aritm variabila
+variabila -> ID
+variabila -> CONST
+operator_aritm -> *
+operator_aritm -> -
+operator_aritm -> +
+operator_aritm -> /
+instr_if -> if ( conditie ) { lista_instr }
+conditie -> variabila operator_rel variabila
+operator_rel -> !=
+operator_rel -> ==
+operator_rel -> >
+operator_rel -> <
+operator_rel -> <=
+operator_rel -> >=
+instr_loop -> while ( conditie ) { lista_instr }
+iesire -> cout scriere
+scriere -> << scriere_p
+scriere_p -> variabila
+scriere_p -> endl
+intrare -> cin >> ID

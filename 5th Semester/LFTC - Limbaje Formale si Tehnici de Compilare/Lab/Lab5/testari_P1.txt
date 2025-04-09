@@ -1,0 +1,17 @@
+//Gramatica cu epsilon
+S -> a b A
+S -> epsilon
+A -> S c a
+A -> b
+
+//NU e LL
+S -> a S c
+S -> a S b S c
+S -> i
+
+
+//E LL
+S -> a S A
+A -> c
+A -> b S c
+S -> i

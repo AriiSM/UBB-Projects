@@ -1,0 +1,6 @@
+int a, b, c;
+cin >> a;
+cin >> b;
+c = 0;
+c = c + a * b + 2;
+cout << a;

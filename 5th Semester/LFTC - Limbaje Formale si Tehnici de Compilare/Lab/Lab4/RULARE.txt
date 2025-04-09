@@ -1,0 +1,12 @@
+1. deschidem terminalul din:
+C:\msys64 si dam clik clik pe mingw64.exe
+
+2. ne ducem la locatia fisierelor
+
+3.
+
+bison -d -o parser.tab.c parser.y
+flex -o lex.yy.c lexer.l
+gcc lex.yy.c parser.tab.c -o parser
+
+./parser input.txt

@@ -1,0 +1,14 @@
+Automat ::= "Stari:" Stari "\n"
+            "Alfabet:" Alfabet "\n"
+            "Tranzitii:" Tranzitii "\n"
+            "StariFinale:" StariFinale
+
+Stari ::= "{" Stare {"," Stare} "}"
+Stare ::= "q" <CONST>
+
+Alfabet ::= "{" Simbol {"," Simbol} "}"
+Simbol ::= <CONST> |"x" |"A" |"B" |"C" |"D" |"E" |"F" | "-"
+Tranzitii ::= Tranzitie {"\n" Tranzitie}
+Tranzitie ::= Stare "," Simbol "->" Stare
+
+StariFinale ::= "{" Stare {"," Stare} "}"

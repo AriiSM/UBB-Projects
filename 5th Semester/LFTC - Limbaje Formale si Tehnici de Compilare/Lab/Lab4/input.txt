@@ -1,0 +1,15 @@
+int main() {
+    int a;
+    int b;
+    cin >> a;
+    cin >> b;
+    while (a == 3.14) {
+        if (a > b){
+            a = a - b;}
+        else
+            b = b - a;}
+    }
+    
+    cout << a;
+    return 0;
+}

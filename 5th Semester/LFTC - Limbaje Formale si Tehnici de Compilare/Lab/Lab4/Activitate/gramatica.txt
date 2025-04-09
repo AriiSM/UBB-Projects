@@ -1,0 +1,4 @@
+S -> abS
+S -> epsilon
+A -> AB
+B -> ;+2

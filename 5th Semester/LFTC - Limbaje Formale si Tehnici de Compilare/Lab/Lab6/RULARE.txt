@@ -1,0 +1,18 @@
+1. De adaugat toate fisierele in Ubuntu
+script.sh
+parser.y
+flex.l
+code.txt
+
+2. De instalat bison, flex, nasm, ld
+sudo apt-get install bison
+sudo apt-get install flex
+sudo apt-get install nasm
+sudo apt-get install ld
+
+3. Ofera permisiuni de rulare scriptului
+chmod +x script.sh
+
+4. Ruleaza scriptul
+./script.sh
+->introdu 2 numere

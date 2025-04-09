@@ -1,0 +1,163 @@
+Terminals unused in grammar
+
+    IF
+    ELSE
+    WHILE
+    RETURN
+    CONST
+    PLUS
+    MINUS
+    MUL
+    DIV
+    ASSIGN
+    LBRACE
+    RBRACE
+    LPAREN
+    RPAREN
+
+
+Grammar
+
+    0 $accept: program $end
+
+    1 program: declaration_list
+
+    2 declaration_list: declaration_list declaration
+    3                 | declaration
+
+    4 declaration: INT ID SEMICOLON
+    5            | FLOAT ID SEMICOLON
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256)
+    INT (258) 4
+    FLOAT (259) 5
+    IF (260)
+    ELSE (261)
+    WHILE (262)
+    RETURN (263)
+    CONST (264)
+    ID (265) 4 5
+    PLUS (266)
+    MINUS (267)
+    MUL (268)
+    DIV (269)
+    ASSIGN (270)
+    LBRACE (271)
+    RBRACE (272)
+    LPAREN (273)
+    RPAREN (274)
+    SEMICOLON (275) 4 5
+
+
+Nonterminals, with rules where they appear
+
+    $accept (21)
+        on left: 0
+    program (22)
+        on left: 1
+        on right: 0
+    declaration_list (23)
+        on left: 2 3
+        on right: 1 2
+    declaration (24)
+        on left: 4 5
+        on right: 2 3
+
+
+State 0
+
+    0 $accept: • program $end
+
+    INT    shift, and go to state 1
+    FLOAT  shift, and go to state 2
+
+    program           go to state 3
+    declaration_list  go to state 4
+    declaration       go to state 5
+
+
+State 1
+
+    4 declaration: INT • ID SEMICOLON
+
+    ID  shift, and go to state 6
+
+
+State 2
+
+    5 declaration: FLOAT • ID SEMICOLON
+
+    ID  shift, and go to state 7
+
+
+State 3
+
+    0 $accept: program • $end
+
+    $end  shift, and go to state 8
+
+
+State 4
+
+    1 program: declaration_list •
+    2 declaration_list: declaration_list • declaration
+
+    INT    shift, and go to state 1
+    FLOAT  shift, and go to state 2
+
+    $default  reduce using rule 1 (program)
+
+    declaration  go to state 9
+
+
+State 5
+
+    3 declaration_list: declaration •
+
+    $default  reduce using rule 3 (declaration_list)
+
+
+State 6
+
+    4 declaration: INT ID • SEMICOLON
+
+    SEMICOLON  shift, and go to state 10
+
+
+State 7
+
+    5 declaration: FLOAT ID • SEMICOLON
+
+    SEMICOLON  shift, and go to state 11
+
+
+State 8
+
+    0 $accept: program $end •
+
+    $default  accept
+
+
+State 9
+
+    2 declaration_list: declaration_list declaration •
+
+    $default  reduce using rule 2 (declaration_list)
+
+
+State 10
+
+    4 declaration: INT ID SEMICOLON •
+
+    $default  reduce using rule 4 (declaration)
+
+
+State 11
+
+    5 declaration: FLOAT ID SEMICOLON •
+
+    $default  reduce using rule 5 (declaration)

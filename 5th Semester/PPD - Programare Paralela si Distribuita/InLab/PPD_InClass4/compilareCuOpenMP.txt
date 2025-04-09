@@ -1,0 +1,10 @@
+dechidem  MSYS2 MINGW64 Shell
+
+navighez la : 
+cd /d/Ariana/Facultate/SEM5/PPD/InLab/PPD_InClass4
+
+compilez cu in MSYS2:
+g++ -o main main.cpp -fopenmp
+
+rulez cu in MSYS2:
+main.exe

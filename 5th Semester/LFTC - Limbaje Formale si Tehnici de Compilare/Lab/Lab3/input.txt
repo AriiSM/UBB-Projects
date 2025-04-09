@@ -1,0 +1,15 @@
+int main ()
+{
+    int variabila;
+    int var;
+    cin>>variabila;
+    cin>>var;
+    while (variabila=7.89)
+    {
+        if(variabila>var)
+            variabila=variabila-var;
+        else var=var-variabila;
+    }
+    cout<<variabila<<endl;
+    daca a==b atunci m=a altfel n=b
+}

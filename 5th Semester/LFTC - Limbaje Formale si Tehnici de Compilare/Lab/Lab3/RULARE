@@ -1,0 +1,12 @@
+1. deschidem terminalul din:
+C:\msys64 si dam clik clik pe mingw64.exe
+
+2. ne ducem la locatia fisierelor
+
+3. Compilare:
+1: 
+flex analizator.l
+2:
+gcc lex.yy.c -o analizator
+3:
+./analizator input.txt

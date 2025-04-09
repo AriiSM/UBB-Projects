@@ -1,0 +1,7 @@
+Stari: {q0, q1, q2}
+Alfabet: {a}
+Tranzitii:
+q0,a->q1
+q1,a->q2
+q2,a->q0
+StariFinale: {q0}
