@@ -1,2 +1,2 @@
-Întreaga aplicație se află în repository-ul [`SpeedCatch`](https://github.com/AriiSM/SoulSpice).
+Întreaga aplicație se află în repository-ul [`SoulSpice`](https://github.com/AriiSM/SoulSpice).
 
