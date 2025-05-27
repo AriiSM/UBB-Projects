@@ -1,0 +1,3 @@
+username,password,expectedResult
+DarkAriiSM,parolawiki,success
+invalid_username,wrong_password,error
