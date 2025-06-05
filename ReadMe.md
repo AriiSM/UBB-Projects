@@ -64,8 +64,8 @@ Acest repository central reunește proiectele dezvoltate de-a lungul facultăți
 ---
 ## ⬛ Semestrul 6
 
-1. **[Calcul Numeric](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/CN%20-%20Calcul%20Numeric)**
-2. **[Istoria Informaticii](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/IS%20-%20Istoria%20Informaticii)**
-3. **[Large Language Model](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/LLM%20-%20Large%20Language%20Model)**
-4. **[Tehnici de Realizare a Sistemelor Inteligente]**
-5. **[Verificarea si Validarea Sistemelor Soft](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/VVSS%20-%20Verificarea%20si%20Validarea%20Sistemelor%20Soft)**
+1. **🧮[Calcul Numeric](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/CN%20-%20Calcul%20Numeric)**
+2. **📜[Istoria Informaticii](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/IS%20-%20Istoria%20Informaticii)**
+3. **🧠[Large Language Model](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/LLM%20-%20Large%20Language%20Model)**
+4. **🤖[Tehnici de Realizare a Sistemelor Inteligente]**
+5. **🧪[Verificarea si Validarea Sistemelor Soft](https://github.com/AriiSM/UBB-Projects/tree/main/6th%20Semester/VVSS%20-%20Verificarea%20si%20Validarea%20Sistemelor%20Soft)**
